@@ -1,0 +1,19 @@
+.icon-custom {
+    font-size: 2.8em;
+    transition: color 0.3s ease;
+    color: #4d4d4d;
+}
+
+.icon-custom:hover {
+    color: #04D004;
+}
+
+.red-social{
+    color: inherit;
+    font-size: 14px;
+}
+
+.img-custom-home {
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
