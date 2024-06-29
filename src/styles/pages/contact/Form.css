@@ -18,7 +18,7 @@
 }
 
 .custom-label {
-    color: rgba(255, 255, 255, 0.44);;
+    color: rgba(255, 255, 255, 0.44);
     cursor: pointer;
     position: absolute;
     top: 0;
@@ -26,7 +26,6 @@
     transform: translateY(10px);
     transition: transform .5s, color .3s;
 }
-
 
 .custom-area {
     height: 192px;
