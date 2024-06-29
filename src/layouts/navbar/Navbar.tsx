@@ -25,7 +25,7 @@ const Navbar: React.FC = React.memo(() => {
 
     return (
         <nav ref={navRef} className={`navbar navbar-expand-lg navbar-dark ${isDesktop && !isMenuOpen ? 'fixed-top fixed-top-desktop bg-none' : ''}`}>
-            <div className="container mt-3 d-flex justify-content-end">
+            <div className="container mt-4 d-flex justify-content-end">
                 <div className={`custom-menu-button d-lg-none ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
                     <div></div>
                     <div></div>
@@ -38,7 +38,7 @@ const Navbar: React.FC = React.memo(() => {
                     className={`collapse navbar-collapse justify-content-center text-center ${isMenuOpen ? 'show' : ''}`}
                     style={{ overflowY: isMenuOpen ? 'hidden' : 'visible' }}
                 >
-                    <div className="navbar-nav mt-3 ms-auto">
+                    <div className="navbar-nav ms-auto">
                         <Link to="#Home" className="nav-link d-none d-md-none d-lg-block" onClick={() => handleScroll("Home")}>Inicio</Link>
                         <Link to="#About" className="nav-link" onClick={() => handleScroll("About")}>Sobre mi</Link>
                         <Link to="#Trajectory" className="nav-link" onClick={() => handleScroll("Trajectory")}>Formación</Link>

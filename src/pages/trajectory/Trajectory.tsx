@@ -4,7 +4,7 @@ import '@/styles';
 
 const Trajectory: React.FC = React.memo(() => {
     return(
-        <div className="container container-trajectory py-5" id="Trajectory">
+        <div className="container container-trajectory py-2 py-md-5" id="Trajectory">
             
             {/* Title */}
             <div className="row d-flex justify-content-center py-5">

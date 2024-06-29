@@ -4,7 +4,7 @@ import { ButtonsDesktop, ButtonsMobile, MyPhoto } from "../../components";
 
 const Home: React.FC = () => {
     return(
-        <div className="container-fluid py-md-5 py-3 container-home" id="Home">
+        <div className="container-fluid py-2 py-md-5 container-home" id="Home">
             <div className="row d-flex justify-content-center py-0 mb-lg-2 mt-lg-5">
                 
                 {/* Title */}
