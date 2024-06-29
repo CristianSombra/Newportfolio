@@ -3,7 +3,7 @@ import "@/styles";
 
 const Experience: React.FC = React.memo(() => {
     return(
-        <div className="container container-experience py-5" id="Experience">
+        <div className="container container-experience py-2 py-md-5" id="Experience">
             
             {/* Title */}
             <div className="row d-flex justify-content-center py-5">
