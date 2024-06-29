@@ -7,7 +7,7 @@ const About: React.FC = () => {
         <div className="container container-about py-2 py-md-5" id="About">
             
             {/* Title */}
-            <div className="row d-flex justify-content-center">
+            <div className="row d-flex justify-content-center py-5">
                 <div className="col-12 col-md-10 col-lg-8">
                     <div className="row d-flex justify-content-start">
                         <div className="col-12">
