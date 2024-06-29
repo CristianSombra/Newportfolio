@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import useScrollToSection from "../../hooks";
-import "@/styles";
+import "../../styles";
 
 const Navbar: React.FC = React.memo(() => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
