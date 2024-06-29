@@ -1,2 +1,2 @@
-import './navbar/TogglerNavbar.css';
+import './navbar/Navbar.css';
 import './footer/red-social.css';
