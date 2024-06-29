@@ -39,7 +39,7 @@ const Navbar: React.FC = React.memo(() => {
                     style={{ overflowY: isMenuOpen ? 'hidden' : 'visible' }}
                 >
                     <div className="navbar-nav mt-3 ms-auto">
-                        <Link to="#Home" className="nav-link" onClick={() => handleScroll("Home")}>Inicio</Link>
+                        <Link to="#Home" className="nav-link d-none d-md-none d-lg-block" onClick={() => handleScroll("Home")}>Inicio</Link>
                         <Link to="#About" className="nav-link" onClick={() => handleScroll("About")}>Sobre mi</Link>
                         <Link to="#Trajectory" className="nav-link" onClick={() => handleScroll("Trajectory")}>Formación</Link>
                         <Link to="#Experience" className="nav-link" onClick={() => handleScroll("Experience")}>Experiencia</Link>
