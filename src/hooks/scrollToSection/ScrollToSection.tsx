@@ -8,8 +8,7 @@ const useScrollToSection = () => {
         if (section) {
             section.scrollIntoView({ behavior: 'smooth' });
 
-            // Ajusta el desplazamiento adicional después de que la vista se haya desplazado
-            const yOffset = -((navRef.current?.offsetHeight || 0) - 40); // Ajusta el valor 16 si hay algún margen adicional que quieras considerar
+            const yOffset = -((navRef.current?.offsetHeight || 0) - 40);
             const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
             window.scrollTo({ top: y, behavior: 'smooth' });
         }
