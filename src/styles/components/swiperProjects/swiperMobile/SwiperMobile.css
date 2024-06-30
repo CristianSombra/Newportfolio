@@ -14,19 +14,12 @@
 .swiper-element img {
     width: 100%;
     height: auto;
-    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent 60%, rgba(0, 0, 0, 0.2) 100%);
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent 55%, rgba(0, 0, 0, 0.1) 100%) !important;
 }
 
-.icon-swiper {
-    font-size: 24px;
-}
 
 @media (max-width: 768px) {
     .swiper-element {
-        padding: 10px;
-    }
-
-    .icon-swiper {
-        font-size: 18px;
+        padding: 5px !important;
     }
 }
