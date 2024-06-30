@@ -1,5 +1,6 @@
 import React from "react";
 import "@/styles";
+import { SwiperProjects } from "../../components";
 
 const Experience: React.FC = React.memo(() => {
     return(
@@ -22,9 +23,9 @@ const Experience: React.FC = React.memo(() => {
 
             {/* My Projects */}
             
-            <div className="row d-flex justify-content-center text-center my-4 my-md-5">
+            <div className="row d-flex justify-content-center text-center my-4 mt-md-5">
                 <div className="col-12 col-md-11 col-lg-10">
-                    <p>- AQUI IRIAN LOS PROYECTOS -</p>
+                    <SwiperProjects />
                 </div>
             </div>
 
