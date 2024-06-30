@@ -8,7 +8,7 @@ const useScrollToSection = () => {
         if (section) {
             section.scrollIntoView({ behavior: 'smooth' });
 
-            const yOffset = -((navRef.current?.offsetHeight || 0) - 40);
+            const yOffset = -((navRef.current?.offsetHeight || 0) - 60);
             const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
             window.scrollTo({ top: y, behavior: 'smooth' });
         }
