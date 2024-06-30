@@ -7,7 +7,7 @@ const SwiperProjects: React.FC = React.memo(() => {
             <div className="row d-lg-none">
                 <SwiperMobile />
             </div>
-            <div className='row d-none d-md-none d-lg-block'>
+            <div className='row d-none d-md-none d-lg-block my-md-5'>
                 <SwiperDesktop />
             </div>
         </div>
