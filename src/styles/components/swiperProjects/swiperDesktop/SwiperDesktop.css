@@ -20,6 +20,15 @@
     -webkit-box-reflect: below 0px linear-gradient(transparent, transparent 65%, rgba(0, 0, 0, 0.2) 100%);
 }
 
+.swiper-pagination-bullet {
+    background-color: #006400 !important;
+    opacity: 0.7 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #04D004 !important;
+    opacity: 1 !important;
+}
 
 .icon-swiper {
     font-size: 2.8em;
