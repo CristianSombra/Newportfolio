@@ -1,11 +1,17 @@
 import React from 'react';
+import SwiperCore from 'swiper/core'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
+import { EffectCoverflow, Pagination } from 'swiper/modules';
 import { nursingHRRG, portfolio, dashboard } from '../../../../assets';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faLaptop } from '@fortawesome/free-solid-svg-icons/faLaptop';
 // import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css';
 import '../../../../styles';
+
+SwiperCore.use([EffectCoverflow, Pagination]);
 
 const SwiperMobile: React.FC = React.memo(() => {
     return (
@@ -31,6 +37,7 @@ const SwiperMobile: React.FC = React.memo(() => {
                         spaceBetween: 60,
                     },
                 }}
+                pagination={{ clickable: true }}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
             >

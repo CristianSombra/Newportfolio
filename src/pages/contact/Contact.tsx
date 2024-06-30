@@ -89,8 +89,8 @@ const Contact: React.FC = React.memo(() => {
 
 
     return(
-        <div className="container container-contact py-2 py-md-5" id="Contact">            
-            <section className="row d-flex justify-content-center mt-5">
+        <div className="container container-contact my-2 py-md-5" id="Contact">            
+            <section className="row d-flex justify-content-center py-5">
                 <div className="col-12 col-md-8 col-lg-6">
                     <h2>Cuéntame</h2>
                     <h1 className="text-white text-center">Tu Idea</h1>
