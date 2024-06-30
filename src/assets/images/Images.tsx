@@ -13,3 +13,8 @@ export const CS = "https://res.cloudinary.com/nursingstaff/image/upload/v1719415
 
 {/* Calendly contact */}
 export const imgCalendly = "https://res.cloudinary.com/nursingstaff/image/upload/v1716777748/Portfolio/index/calendly_gjme1k.png";
+
+{/* Projects */}
+export const nursingHRRG = "https://res.cloudinary.com/nursingstaff/image/upload/v1716775710/Portfolio/proyects/Departamento_enfermeria_n29dju.jpg";
+export const portfolio = "https://res.cloudinary.com/nursingstaff/image/upload/v1716775710/Portfolio/proyects/Prototivo_portafolio_l7jizt.jpg";
+export const dashboard = "https://res.cloudinary.com/nursingstaff/image/upload/v1716775710/Portfolio/proyects/Prototipo_dashboard_m1jaau.jpg";
