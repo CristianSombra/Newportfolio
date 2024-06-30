@@ -14,7 +14,7 @@
 .swiper-element img {
     width: 100%;
     height: auto;
-    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent 55%, rgba(0, 0, 0, 0.1) 100%) !important;
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent 50%, rgba(0, 0, 0, 0.2) 100%) !important;
 }
 
 
