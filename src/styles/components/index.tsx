@@ -6,4 +6,4 @@ import './technologiesCarousel/technologiesCarousel.css';
 import './timeLine/TimeLine.css';
 import './scrollTop/ScrollTop.css';
 import './myPhoto/MyPhoto.css';
-import './swiperProjects/SwiperProjects.css';
+import './swiperProjects/index';

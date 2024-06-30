@@ -6,6 +6,7 @@
 
 .swiper-slide {
     width: 100%;
+    padding-bottom: 20rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,6 +18,7 @@
     height: auto;
     display: block;
     margin: 0 auto;
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent 60%, rgba(0, 0, 0, 0.2) 100%);
 }
 
 .icon-swiper {
