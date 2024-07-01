@@ -3,8 +3,8 @@ import { toast } from "react-toastify";
 import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
 import { imgCalendly } from "../../assets";
-import "../../styles";
 import { CalendlyWidget } from "../../components";
+import "@/styles";
 
 interface Props {
     animate: boolean;
