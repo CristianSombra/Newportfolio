@@ -6,7 +6,7 @@ import { nursingHRRG, portfolio, dashboard } from '../../../../assets';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css';
-import '../../../../styles';
+import '@/styles';
 
 
 SwiperCore.use([EffectCoverflow, Pagination]);

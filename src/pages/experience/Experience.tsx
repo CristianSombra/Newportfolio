@@ -1,10 +1,21 @@
 import React from "react";
-import "@/styles";
+import { motion } from "framer-motion";
 import { SwiperProjects } from "../../components";
+import "@/styles";
 
-const Experience: React.FC = React.memo(() => {
+interface Props {
+    animate: boolean;
+}
+
+const Experience: React.FC<Props> = ({ animate }) => {
     return(
-        <div className="container container-experience mt-5" id="Experience">
+        <motion.div 
+            initial={{ opacity: 0 }}
+            animate={animate ? { opacity: 1 } : { opacity: 0 }}
+            transition={{ duration: 0.6 }}
+            className="container container-experience mt-5" 
+            id="Experience"
+            >
             
             {/* Title */}
             <div className="row d-flex justify-content-center py-5">
@@ -29,8 +40,8 @@ const Experience: React.FC = React.memo(() => {
                 </div>
             </div>
 
-        </div>
+        </motion.div>
     );
-});
+};
 
 export default Experience;

@@ -6,7 +6,11 @@ import { imgCalendly } from "../../assets";
 import "../../styles";
 import { CalendlyWidget } from "../../components";
 
-const Contact: React.FC = React.memo(() => {
+interface Props {
+    animate: boolean;
+}
+
+const Contact: React.FC<Props>= React.memo(({ animate }) => {
     const [formControl, setFormControl] = useState({
         from_name: "",
         email: "",
@@ -89,7 +93,14 @@ const Contact: React.FC = React.memo(() => {
 
 
     return(
-        <div className="container container-contact my-2 py-md-3" id="Contact">            
+        <motion.div 
+            initial={{ opacity: 0 }}
+            animate={animate ? { opacity: 1 } : { opacity: 0 }}
+            transition={{ duration: 0.6 }}
+            className="container container-contact my-2 py-md-3" 
+            id="Contact"
+            >
+                            
             <section className="row d-flex justify-content-center py-5">
                 <div className="col-12 col-md-8 col-lg-6">
                     <h2>Cuéntame</h2>
@@ -189,7 +200,7 @@ const Contact: React.FC = React.memo(() => {
                     
                 </div>
             </section>
-        </div>
+        </motion.div>
     )
 })
 

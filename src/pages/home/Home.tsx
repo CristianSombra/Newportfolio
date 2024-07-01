@@ -1,10 +1,21 @@
 import React from "react";
-import '@/styles';
+import { motion } from "framer-motion";
 import { ButtonsDesktop, ButtonsMobile, MyPhoto } from "../../components";
+import '@/styles';
 
-const Home: React.FC = () => {
+interface Props {
+    animate: boolean;
+}
+
+const Home: React.FC<Props>= ({ animate }) => {
     return(
-        <div className="container-fluid py-2 py-md-5 container-home" id="Home">
+        <motion.div 
+            initial={{ opacity: 0 }}
+            animate={animate ? { opacity: 1 } : { opacity: 0 }}
+            transition={{ duration: 0.6 }}
+            className="container-fluid py-2 py-md-5 container-home" 
+            id="Home">
+            
             <div className="row d-flex justify-content-center py-0 mb-lg-2 mt-lg-5">
                 
                 {/* Title */}
@@ -39,7 +50,7 @@ const Home: React.FC = () => {
                 </div>
             </div>
 
-        </div>
+        </motion.div>
     );
 };
 
