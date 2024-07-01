@@ -1,13 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
-// import { TimeLine } from "../../components";
+import { AnimateProps, TimeLine } from "../../components";
 import '@/styles';
 
-interface Props {
-    animate: boolean;
-}
-
-const Trajectory: React.FC <Props> = React.memo(({animate}) => {
+const Trajectory: React.FC <AnimateProps> = React.memo(({animate}) => {
     return(
         <motion.div 
             initial={{ opacity: 0 }}
@@ -33,7 +29,7 @@ const Trajectory: React.FC <Props> = React.memo(({animate}) => {
             </div>
 
             {/* Timeline */}
-            {/* <TimeLine /> */}
+            <TimeLine />
             
         </motion.div>
     );

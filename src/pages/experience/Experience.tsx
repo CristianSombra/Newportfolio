@@ -1,13 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { SwiperProjects } from "../../components";
+import { SwiperProjects, AnimateProps } from "../../components";
 import "@/styles";
 
-interface Props {
-    animate: boolean;
-}
-
-const Experience: React.FC<Props> = ({ animate }) => {
+const Experience: React.FC<AnimateProps> = ({ animate }) => {
     return(
         <motion.div 
             initial={{ opacity: 0 }}

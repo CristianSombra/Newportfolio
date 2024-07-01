@@ -3,14 +3,10 @@ import { toast } from "react-toastify";
 import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
 import { imgCalendly } from "../../assets";
-import { CalendlyWidget } from "../../components";
+import { CalendlyWidget, AnimateProps } from "../../components";
 import "@/styles";
 
-interface Props {
-    animate: boolean;
-}
-
-const Contact: React.FC<Props>= React.memo(({ animate }) => {
+const Contact: React.FC<AnimateProps>= React.memo(({ animate }) => {
     const [formControl, setFormControl] = useState({
         from_name: "",
         email: "",
