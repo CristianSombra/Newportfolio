@@ -1,5 +1,6 @@
 import { useCallback } from 'react';
 import axios from 'axios';
+import { saveAs } from 'file-saver';
 
 const useDownloadPdf = () => {
     const downloadPdf = useCallback(async (pdfUrl: string) => {
@@ -7,13 +8,8 @@ const useDownloadPdf = () => {
             const response = await axios.get(pdfUrl, {
                 responseType: 'blob' // Importante para manejar archivos binarios
             });
-            const urlBlob = window.URL.createObjectURL(new Blob([response.data], { type: 'application/pdf' }));
-            const link = document.createElement('a');
-            link.href = urlBlob;
-            link.setAttribute('download', 'Cristian Sombra.pdf'); // nombre del archivo que se descargará
-            document.body.appendChild(link);
-            link.click();
-            link.remove();
+            const blob = new Blob([response.data], { type: 'application/pdf' });
+            saveAs(blob, 'Cristian Sombra.pdf');
         } catch (error) {
             console.error('Error descargando el PDF:', error);
         }
