@@ -7,15 +7,10 @@ const useDownloadPdf = () => {
             const response = await axios.get(pdfUrl, {
                 responseType: 'blob' // Importante para manejar archivos binarios
             });
-            const urlBlob = window.URL.createObjectURL(new Blob([response.data]));
-            const link = document.createElement('a');
-            link.href = urlBlob;
-            link.setAttribute('download', 'Cristian Sombra.pdf');
-            document.body.appendChild(link);
-            link.click();
-            link.remove();
+            const urlBlob = window.URL.createObjectURL(new Blob([response.data], { type: 'application/pdf' }));
+            window.open(urlBlob, '_blank', 'noopener,noreferrer');
         } catch (error) {
-            console.error('Error descargando el PDF:', error);
+            console.error('Error abriendo el PDF en una nueva pestaña:', error);
         }
     }, []);
 
