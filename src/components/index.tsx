@@ -3,7 +3,6 @@ import { SpinnerLoading } from "./spinnerLoading/SpinnerLoading";
 import { ButtonsDesktop, ButtonsMobile } from "./buttons/Buttons";
 import { MyPhoto } from "./myPhoto/MyPhoto"; 
 import CardProps from "./card/cardProps";
-import { cloudinaryConfig } from "./cloudinary/CloudinaryConfig";
 
 export const ScrollTop = lazy(() => import("./scrollTop/ScrollTop"));
 export const TechnologiesCarousel = lazy(() => import("./technologies/Technologies-carousel"));
@@ -15,5 +14,4 @@ export const CalendlyWidget = lazy(() => import("./calendlyWidget/CalendlyWidget
 export { ButtonsDesktop, ButtonsMobile };
 export { SpinnerLoading };
 export type { CardProps };
-export { cloudinaryConfig };
 export { MyPhoto };

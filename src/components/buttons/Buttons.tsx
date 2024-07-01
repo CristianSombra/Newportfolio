@@ -1,6 +1,5 @@
 import React from "react";
 import { useScrollToSection, useDownloadPdf } from "../../hooks";
-import { pdfCurriculum } from "../../assets";
 import { Link } from "react-router-dom";
 import "@/styles"
 
@@ -9,6 +8,7 @@ const ButtonsDesktop: React.FC = React.memo(() => {
     const { downloadPdf } = useDownloadPdf();
 
     const handleDownloadPdf = () => {
+        const pdfCurriculum = '/Cristian Sombra.pdf'
         downloadPdf(pdfCurriculum)
     }
 
@@ -43,6 +43,7 @@ const ButtonsMobile: React.FC = React.memo(() => {
     const { downloadPdf } = useDownloadPdf();
 
     const handleDownloadPdf = () => {
+        const pdfCurriculum = '/Cristian Sombra.pdf'
         downloadPdf(pdfCurriculum)
     }
 
