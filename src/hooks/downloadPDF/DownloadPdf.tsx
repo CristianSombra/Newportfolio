@@ -1,6 +1,5 @@
 import { useCallback } from 'react';
 import axios from 'axios';
-import { saveAs } from 'file-saver';
 
 const useDownloadPdf = () => {
     const downloadPdf = useCallback(async (pdfUrl: string) => {
@@ -9,26 +8,18 @@ const useDownloadPdf = () => {
                 responseType: 'blob' // Importante para manejar archivos binarios
             });
             const blob = new Blob([response.data], { type: 'application/pdf' });
+            const urlBlob = window.URL.createObjectURL(blob);
 
-            // Intentar usar FileSaver.js primero
-            try {
-                saveAs(blob, 'Cristian Sombra.pdf');
-            } catch (error) {
-                console.error('Error usando FileSaver.js, intentando método alternativo:', error);
+            // Crear un enlace oculto y simular un clic para iniciar la descarga
+            const link = document.createElement('a');
+            link.href = urlBlob;
+            link.setAttribute('download', 'document.pdf'); // Nombre del archivo que se descargará
+            document.body.appendChild(link);
+            link.click();
+            link.remove();
 
-                // Método alternativo usando un iframe
-                const urlBlob = window.URL.createObjectURL(blob);
-                const iframe = document.createElement('iframe');
-                iframe.style.display = 'none';
-                iframe.src = urlBlob;
-                document.body.appendChild(iframe);
-                iframe.onload = () => {
-                    setTimeout(() => {
-                        document.body.removeChild(iframe);
-                        window.URL.revokeObjectURL(urlBlob);
-                    }, 100);
-                };
-            }
+            // Revocar el objeto URL después de un tiempo
+            setTimeout(() => window.URL.revokeObjectURL(urlBlob), 100);
         } catch (error) {
             console.error('Error descargando el PDF:', error);
         }
