@@ -2,6 +2,7 @@ import React from "react";
 import { TA, FS, B5, UI, CS } from "../../assets";
 import "../../styles";
 
+
 const TimeLine: React.FC = React.memo(() => {
     return(
         <div className="container-timeline">

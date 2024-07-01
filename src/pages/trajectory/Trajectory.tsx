@@ -1,10 +1,21 @@
 import React from "react";
-import { TimeLine } from "../../components";
+import { motion } from "framer-motion";
+// import { TimeLine } from "../../components";
 import '@/styles';
 
-const Trajectory: React.FC = React.memo(() => {
+interface Props {
+    animate: boolean;
+}
+
+const Trajectory: React.FC <Props> = React.memo(({animate}) => {
     return(
-        <div className="container container-trajectory py-2 py-md-5" id="Trajectory">
+        <motion.div 
+            initial={{ opacity: 0 }}
+            animate={animate ? { opacity: 1 } : { opacity: 0 }}
+            transition={{ duration: 0.6 }}
+            className="container container-trajectory py-2 py-md-5" 
+            id="Trajectory"
+            >
             
             {/* Title */}
             <div className="row d-flex justify-content-center py-5">
@@ -22,9 +33,9 @@ const Trajectory: React.FC = React.memo(() => {
             </div>
 
             {/* Timeline */}
-            <TimeLine />
+            {/* <TimeLine /> */}
             
-        </div>
+        </motion.div>
     );
 });
 

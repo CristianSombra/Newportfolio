@@ -1,10 +1,20 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { TechnologiesCarousel, Cards } from "../../components/";
 import '@/styles';
 
-const About: React.FC = () => {
+interface Props {
+    animate: boolean;
+}
+
+const About: React.FC<Props>= ({ animate }) => {
     return(
-        <div className="container container-about py-2 py-md-5" id="About">
+        <motion.div 
+            initial={{ opacity: 0 }}
+            animate={animate ? { opacity: 1 } : { opacity: 0 }}
+            transition={{ duration: 0.6 }}
+            className="container container-about py-2 py-md-5" 
+            id="About">
             
             {/* Title */}
             <div className="row d-flex justify-content-center py-5">
@@ -35,7 +45,7 @@ const About: React.FC = () => {
             {/* Services */}
             <Cards />
 
-        </div>
+        </motion.div>
     );
 };
 
