@@ -1,3 +1,7 @@
+import useDownloadPdf from "./downloadPDF/DownloadPdf";
 import useScrollToSection from "./scrollToSection/ScrollToSection";
 
-export default useScrollToSection;
+export {
+    useDownloadPdf,
+    useScrollToSection
+};

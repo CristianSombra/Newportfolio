@@ -1,10 +1,16 @@
 import React from "react";
-import useScrollToSection from "../../hooks";
+import { useScrollToSection, useDownloadPdf } from "../../hooks";
+import { pdfCurriculum } from "../../assets";
 import { Link } from "react-router-dom";
 import "@/styles"
 
 const ButtonsDesktop: React.FC = React.memo(() => {
     const { scrollToSection, navRef } = useScrollToSection();
+    const { downloadPdf } = useDownloadPdf();
+
+    const handleDownloadPdf = () => {
+        downloadPdf(pdfCurriculum)
+    }
 
     const handleScroll = (id: string) => {
         scrollToSection(id);
@@ -14,7 +20,7 @@ const ButtonsDesktop: React.FC = React.memo(() => {
         <div className="row d-flex justify-content-start mt-0 mt-md-3">
             <div className="col-12 col-md-6 col-lg-6 col-xl-4 d-none d-md-block">
                 <div className="py-3">
-                    <button className="btn-custom-1">
+                    <button className="btn-custom-1" onClick={handleDownloadPdf}>
                         Currículum
                     </button>
                 </div>
@@ -34,6 +40,11 @@ const ButtonsDesktop: React.FC = React.memo(() => {
 
 const ButtonsMobile: React.FC = React.memo(() => {
     const { scrollToSection, navRef } = useScrollToSection();
+    const { downloadPdf } = useDownloadPdf();
+
+    const handleDownloadPdf = () => {
+        downloadPdf(pdfCurriculum)
+    }
 
     const handleScroll = (id: string) => {
         scrollToSection(id);
@@ -42,7 +53,7 @@ const ButtonsMobile: React.FC = React.memo(() => {
         <div className="row d-flex justify-content-center text-center d-block d-md-none">
             <div className="col-6">
                 <div>
-                    <button className="btn-custom-1">
+                    <button className="btn-custom-1" onClick={handleDownloadPdf}>
                         Currículum
                     </button>
                 </div>
