@@ -1,13 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { TechnologiesCarousel, Cards } from "../../components/";
+import { TechnologiesCarousel, Cards, AnimateProps } from "../../components/";
 import '@/styles';
 
-interface Props {
-    animate: boolean;
-}
-
-const About: React.FC<Props>= ({ animate }) => {
+const About: React.FC<AnimateProps>= ({ animate }) => {
     return(
         <motion.div 
             initial={{ opacity: 0 }}

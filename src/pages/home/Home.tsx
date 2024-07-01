@@ -1,13 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ButtonsDesktop, ButtonsMobile, MyPhoto } from "../../components";
+import { ButtonsDesktop, ButtonsMobile, MyPhoto, AnimateProps } from "../../components";
 import '@/styles';
 
-interface Props {
-    animate: boolean;
-}
-
-const Home: React.FC<Props>= ({ animate }) => {
+const Home: React.FC<AnimateProps>= ({ animate }) => {
     return(
         <motion.div 
             initial={{ opacity: 0 }}
