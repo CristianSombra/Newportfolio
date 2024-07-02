@@ -9,7 +9,7 @@ import {
 import { useInView } from "react-intersection-observer";
 
 const AppRouter: React.FC = () => {
-    const [homeRef, homeInView] = useInView({ threshold: 0.25 });
+    const [homeRef, homeInView] = useInView({ threshold: 0.50 });
     const [aboutRef, aboutInView] = useInView({ threshold: 0.25 });
     const [trajectoryRef, trajectoryInView] = useInView({ threshold: 0.25 });
     const [experienceRef, experienceInView] = useInView({ threshold: 0.25 });

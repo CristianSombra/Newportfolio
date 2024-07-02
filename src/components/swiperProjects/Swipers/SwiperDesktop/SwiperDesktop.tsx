@@ -47,8 +47,14 @@ const SwiperDesktop: React.FC = React.memo(() => {
                             <motion.div 
                                 animate={{opacity: activeIndex === 0 ? 1 : 0}}
                                 >
-                                <FontAwesomeIcon icon={faGithub} className="mb-3 icon-swiper-desktop" />
-                                <FontAwesomeIcon icon={faLaptop} className="mb-3 icon-swiper-desktop" />
+                                <h4 style={{color: '#04D004', fontWeight: 'bold'}}>Departamento de Enfermería</h4>
+                                <h5>Tierra del Fuego</h5>
+                                <a href="https://github.com/CristianSombra/NursingHRRG" target="_blank" rel="noopener norefererr">
+                                    <FontAwesomeIcon icon={faGithub} className="mb-3 icon-swiper-desktop" />
+                                </a>
+                                <a href="https://enfermeriahrrg.com.ar/" target="_blank" rel="noopener noreferrer">
+                                    <FontAwesomeIcon icon={faLaptop} className="mb-3 icon-swiper-desktop" />
+                                </a>
                             </motion.div>
                             <img src={nursingHRRG} className='img-fluid' alt="Departamento Enfermería" />
                         </SwiperSlide>
@@ -56,8 +62,14 @@ const SwiperDesktop: React.FC = React.memo(() => {
                             <motion.div
                                 animate={{opacity: activeIndex === 1 ? 1 : 0}}
                                 >
-                                <FontAwesomeIcon icon={faGithub} className="mb-3 icon-swiper-desktop" />
-                                <FontAwesomeIcon icon={faLaptop} className="mb-3 icon-swiper-desktop" />
+                                <h4 style={{color: '#04D004', fontWeight: 'bold'}}>Portafolio fotógrafo</h4>
+                                <h5>Prototipo</h5>
+                                <a href="https://github.com/CristianSombra/Portafolioadaptable" target="_blank" rel="noopener noreferrer">
+                                    <FontAwesomeIcon icon={faGithub} className="mb-3 icon-swiper-desktop" />
+                                </a>
+                                <a href="https://portafolioadaptable.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                    <FontAwesomeIcon icon={faLaptop} className="mb-3 icon-swiper-desktop" />
+                                </a>
                             </motion.div>
                             <img src={portfolio} className='img-fluid' alt="Prototipo Portafolio" />
                         </SwiperSlide>
@@ -65,8 +77,14 @@ const SwiperDesktop: React.FC = React.memo(() => {
                             <motion.div
                                 animate={{opacity: activeIndex === 2 ? 1 : 0}}
                                 >
-                                <FontAwesomeIcon icon={faGithub} className="mb-3 icon-swiper-desktop" />
-                                <FontAwesomeIcon icon={faLaptop} className="mb-3 icon-swiper-desktop" />
+                                <h4 style={{color: '#04D004', fontWeight: 'bold'}}>Panel de información</h4>
+                                <h4>Prototipo</h4>
+                                <a href="https://github.com/CristianSombra/Dashboardadaptable" target="_blank" rel="noopener noreferrer">
+                                    <FontAwesomeIcon icon={faGithub} className="mb-3 icon-swiper-desktop" />
+                                </a>
+                                <a href="https://dashboardadaptable.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                    <FontAwesomeIcon icon={faLaptop} className="mb-3 icon-swiper-desktop" />
+                                </a>
                             </motion.div>
                             <img src={dashboard} className='img-fluid' alt="Prototipo Dashboard" />
                         </SwiperSlide>
