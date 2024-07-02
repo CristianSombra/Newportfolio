@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useScrollToSection } from "../../hooks";
 import "@/styles";
@@ -39,11 +38,11 @@ const Navbar: React.FC = React.memo(() => {
                     style={{ overflowY: isMenuOpen ? 'hidden' : 'visible' }}
                 >
                     <div className="navbar-nav ms-auto">
-                        <Link to="#Home" className="nav-link d-none d-md-none d-lg-block" onClick={() => handleScroll("Home")}>Inicio</Link>
-                        <Link to="#About" className="nav-link" onClick={() => handleScroll("About")}>Sobre mi</Link>
-                        <Link to="#Trajectory" className="nav-link" onClick={() => handleScroll("Trajectory")}>Formación</Link>
-                        <Link to="#Experience" className="nav-link" onClick={() => handleScroll("Experience")}>Experiencia</Link>
-                        <Link to="#Contact" className="nav-link" onClick={() => handleScroll("Contact")}>Contacto</Link>
+                        <a href="#Home" className="nav-link d-none d-md-none d-lg-block" onClick={() => handleScroll("Home")}>Inicio</a>
+                        <a href="#About" className="nav-link" onClick={() => handleScroll("About")}>Sobre mi</a>
+                        <a href="#Trajectory" className="nav-link" onClick={() => handleScroll("Trajectory")}>Formación</a>
+                        <a href="#Experience" className="nav-link" onClick={() => handleScroll("Experience")}>Experiencia</a>
+                        <a href="#Contact" className="nav-link" onClick={() => handleScroll("Contact")}>Contacto</a>
                     </div>
                 </motion.div>
             </div>
