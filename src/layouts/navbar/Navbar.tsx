@@ -11,7 +11,8 @@ const Navbar: React.FC = React.memo(() => {
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
     const closeMenu = () => setIsMenuOpen(false);
 
-    const handleScroll = (id: string) => {
+    const handleScroll = (event: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+        event.preventDefault();
         scrollToSection(id);
         closeMenu();
     }
@@ -38,11 +39,11 @@ const Navbar: React.FC = React.memo(() => {
                     style={{ overflowY: isMenuOpen ? 'hidden' : 'visible' }}
                 >
                     <div className="navbar-nav ms-auto">
-                        <a href="#Home" className="nav-link d-none d-md-none d-lg-block" onClick={() => handleScroll("Home")}>Inicio</a>
-                        <a href="#About" className="nav-link" onClick={() => handleScroll("About")}>Sobre mi</a>
-                        <a href="#Trajectory" className="nav-link" onClick={() => handleScroll("Trajectory")}>Formación</a>
-                        <a href="#Experience" className="nav-link" onClick={() => handleScroll("Experience")}>Experiencia</a>
-                        <a href="#Contact" className="nav-link" onClick={() => handleScroll("Contact")}>Contacto</a>
+                        <a href="#Home" className="nav-link d-none d-md-none d-lg-block" onClick={(event) => handleScroll(event, "Home")}>Inicio</a>
+                        <a href="#About" className="nav-link" onClick={(event) => handleScroll(event, "About")}>Sobre mi</a>
+                        <a href="#Trajectory" className="nav-link" onClick={(event) => handleScroll(event, "Trajectory")}>Formación</a>
+                        <a href="#Experience" className="nav-link" onClick={(event) => handleScroll(event, "Experience")}>Experiencia</a>
+                        <a href="#Contact" className="nav-link" onClick={(event) => handleScroll(event, "Contact")}>Contacto</a>
                     </div>
                 </motion.div>
             </div>
