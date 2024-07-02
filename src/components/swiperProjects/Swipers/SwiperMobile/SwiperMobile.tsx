@@ -48,8 +48,12 @@ const SwiperMobile: React.FC = React.memo(() => {
                         <h4 style={{color: '#04D004', fontWeight: 'bold'}}>Departamento de Enfermería</h4>
                         <h5>Tierra del Fuego</h5>
                         <div>
-                            <FontAwesomeIcon icon={faGithub} className="mb-3 mt-1 icon-swiper-mobile" />
-                            <FontAwesomeIcon icon={faLaptop} className="mb-3 mt-1 icon-swiper-mobile" />
+                            <a href="https://github.com/CristianSombra/NursingHRRG" target="_blank" rel="noopener norefererr">
+                                <FontAwesomeIcon icon={faGithub} className="mb-3 mt-1 icon-swiper-mobile" />
+                            </a>
+                            <a href="https://enfermeriahrrg.com.ar/" target="_blank" rel="noopener noreferrer">
+                                <FontAwesomeIcon icon={faLaptop} className="mb-3 mt-1 icon-swiper-mobile" />
+                            </a>
                         </div>
                         <img src={nursingHRRG} className='img-fluid' alt="Departamento Enfermería" />
                     </motion.div>
@@ -64,8 +68,12 @@ const SwiperMobile: React.FC = React.memo(() => {
                         <h4 style={{color: '#04D004', fontWeight: 'bold'}}>Portafolio fotógrafo</h4>
                         <h5>Prototipo</h5>
                         <div className="icon-container-mobile">
-                            <FontAwesomeIcon icon={faGithub} className="mb-3 mt-1 icon-swiper-mobile" />
-                            <FontAwesomeIcon icon={faLaptop} className="mb-3 mt-1 icon-swiper-mobile" />
+                            <a href="https://github.com/CristianSombra/Portafolioadaptable" target="_blank" rel="noopener noreferrer">
+                                <FontAwesomeIcon icon={faGithub} className="mb-3 mt-1 icon-swiper-mobile" />
+                            </a>
+                            <a href="https://portafolioadaptable.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                <FontAwesomeIcon icon={faLaptop} className="mb-3 mt-1 icon-swiper-mobile" />
+                            </a>
                         </div>
                         <img src={portfolio} className='img-fluid' alt="Prototipo Portafolio" />
                     </motion.div>
@@ -80,8 +88,13 @@ const SwiperMobile: React.FC = React.memo(() => {
                         <h4 style={{color: '#04D004', fontWeight: 'bold'}}>Panel de información</h4>
                         <h4>Prototipo</h4>
                         <div className="icon-container-mobile">
-                            <FontAwesomeIcon icon={faGithub} className="mb-3 mt-1 icon-swiper-mobile" />
-                            <FontAwesomeIcon icon={faLaptop} className="mb-3 mt-1 icon-swiper-mobile" />
+                            <a href="https://github.com/CristianSombra/Dashboardadaptable" target="_blank" rel="noopener noreferrer">
+                                <FontAwesomeIcon icon={faGithub} className="mb-3 mt-1 icon-swiper-mobile" />
+                            </a>
+                            <a href="https://dashboardadaptable.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                <FontAwesomeIcon icon={faLaptop} className="mb-3 mt-1 icon-swiper-mobile" />
+                            </a>
+                            
                         </div>
                         <img src={dashboard} className='img-fluid' alt="Prototipo Dashboard" />
                     </motion.div>
