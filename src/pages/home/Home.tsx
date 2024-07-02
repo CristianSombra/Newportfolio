@@ -40,7 +40,7 @@ const Home: React.FC<AnimateProps>= ({ animate }) => {
             </div>
 
             {/* Text */}
-            <div className="row d-flex justify-content-center text-center my-5 my-md-0">
+            <div className="row d-flex justify-content-center text-center mt-5 my-md-0">
                 <div className="col-12 d-block d-lg-none mt-5">
                     <p>Apasionado del <strong style={{color: '#04D004'}}>código</strong> y amante de los desafíos.</p>
                 </div>

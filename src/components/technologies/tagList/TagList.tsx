@@ -88,7 +88,7 @@ const TagList: React.FC = React.memo(()=> {
 
 
                     <section className="row d-flex justify-content-center align-items-center my-5 d-block d-sm-none svg-custom">
-                    <div className="col-12 text-center">
+                    <div className="col-12 text-center mb-3">
                         <div className="tag-list">
                             <div className="inner">
                                 <div className="tag"><span></span>

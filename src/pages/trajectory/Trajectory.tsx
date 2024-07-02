@@ -9,7 +9,7 @@ const Trajectory: React.FC <AnimateProps> = React.memo(({animate}) => {
             initial={{ opacity: 0 }}
             animate={animate ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.6 }}
-            className="container container-trajectory py-2 py-md-5" 
+            className="container container-trajectory pb-2 py-md-5" 
             id="Trajectory"
             >
             
