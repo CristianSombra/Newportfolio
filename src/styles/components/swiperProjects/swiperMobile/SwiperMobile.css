@@ -27,12 +27,6 @@
     opacity: 1 !important;
 }
 
-@media (max-width: 768px) {
-    .swiper-element {
-        padding: 5px !important;
-    }
-}
-
 
 .icon-swiper-mobile {
     margin: 0 16px;
@@ -43,3 +37,20 @@
 
 .icon-swiper-mobile:hover {
     color: #04D004}
+
+
+    
+@media (min-width: 766px) and (max-width: 884px) {
+    .swiper-element img {
+        max-width: 60%;;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .swiper-element {
+        padding: 5px !important;
+    }
+}
+

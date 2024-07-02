@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SwiperCore from 'swiper/core'
+import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 import { nursingHRRG, portfolio, dashboard } from '../../../../assets';
@@ -14,6 +15,12 @@ import '@/styles';
 SwiperCore.use([EffectCoverflow, Pagination]);
 
 const SwiperMobile: React.FC = React.memo(() => {
+    const [activeIndex, setActiveIndex] = useState<number>(0)
+
+    const handleSlideChange = (swiper: any) => {
+        setActiveIndex(swiper.realIndex)
+    }
+
     return (
         <div className="container">
             <Swiper
@@ -25,53 +32,59 @@ const SwiperMobile: React.FC = React.memo(() => {
                         spaceBetween: 20,
                     },
                     768: {
-                        slidesPerView: 2,
-                        spaceBetween: 40,
-                    },
-                    1024: {
-                        slidesPerView: 3,
-                        spaceBetween: 50,
-                    },
-                    1200: {
-                        slidesPerView: 3,
-                        spaceBetween: 60,
+                        slidesPerView: 1,
+                        spaceBetween: 20,
                     },
                 }}
                 pagination={{ clickable: true }}
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
+                onSlideChange={handleSlideChange}
             >
                 {/* Imagen con botones 1 */}
                 <SwiperSlide>
-                    <div className="swiper-element">
+                    <motion.div
+                        animate={{opacity: activeIndex === 0 ? 1 : 0}}
+                        className="swiper-element"
+                        >
+                        <h4 style={{color: '#04D004'}}>Departamento de Enfermería</h4>
+                        <h4>Tierra del Fuego</h4>
                         <div>
                             <FontAwesomeIcon icon={faGithub} className="mb-3 icon-swiper-mobile" />
                             <FontAwesomeIcon icon={faLaptop} className="mb-3 icon-swiper-mobile" />
                         </div>
                         <img src={nursingHRRG} className='img-fluid' alt="Departamento Enfermería" />
-                    </div>
+                    </motion.div>
                 </SwiperSlide>
 
                 {/* Imagen con botones 2 */}
                 <SwiperSlide>
-                    <div className="swiper-element">
+                    <motion.div 
+                        animate={{opacity: activeIndex === 1 ? 1 : 0}}
+                        className="swiper-element"
+                        >
+                        <h4 style={{color: '#04D004'}}>Portafolio fotógrafo</h4>
+                        <h4>Prototipo</h4>
                         <div className="icon-container-mobile">
                             <FontAwesomeIcon icon={faGithub} className="mb-3 icon-swiper-mobile" />
                             <FontAwesomeIcon icon={faLaptop} className="mb-3 icon-swiper-mobile" />
                         </div>
                         <img src={portfolio} className='img-fluid' alt="Prototipo Portafolio" />
-                    </div>
+                    </motion.div>
                 </SwiperSlide>
 
                 {/* Imagen con botones 3 */}
                 <SwiperSlide>
-                    <div className="swiper-element">
+                    <motion.div 
+                        animate={{opacity: activeIndex === 2 ? 1 : 0}}
+                        className="swiper-element"
+                        >
+                        <h4 style={{color: '#04D004'}}>Panel de información</h4>
+                        <h4>Prototipo</h4>
                         <div className="icon-container-mobile">
                             <FontAwesomeIcon icon={faGithub} className="mb-3 icon-swiper-mobile" />
                             <FontAwesomeIcon icon={faLaptop} className="mb-3 icon-swiper-mobile" />
                         </div>
                         <img src={dashboard} className='img-fluid' alt="Prototipo Dashboard" />
-                    </div>
+                    </motion.div>
                 </SwiperSlide>
             </Swiper>
         </div>
