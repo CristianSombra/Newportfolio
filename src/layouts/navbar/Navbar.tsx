@@ -19,7 +19,7 @@ const Navbar: React.FC = React.memo(() => {
     const handleCloseMenu = (id: string) => {
         setTimeout(() => {
             closeMenu();
-        }, 1000);
+        }, 500);
 
         scrollToSection(id)
     };
