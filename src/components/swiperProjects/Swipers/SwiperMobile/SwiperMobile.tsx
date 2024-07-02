@@ -45,11 +45,11 @@ const SwiperMobile: React.FC = React.memo(() => {
                         animate={{opacity: activeIndex === 0 ? 1 : 0}}
                         className="swiper-element"
                         >
-                        <h4 style={{color: '#04D004'}}>Departamento de Enfermería</h4>
-                        <h4>Tierra del Fuego</h4>
+                        <h4 style={{color: '#04D004', fontWeight: 'bold'}}>Departamento de Enfermería</h4>
+                        <h5>Tierra del Fuego</h5>
                         <div>
-                            <FontAwesomeIcon icon={faGithub} className="mb-3 icon-swiper-mobile" />
-                            <FontAwesomeIcon icon={faLaptop} className="mb-3 icon-swiper-mobile" />
+                            <FontAwesomeIcon icon={faGithub} className="mb-3 mt-1 icon-swiper-mobile" />
+                            <FontAwesomeIcon icon={faLaptop} className="mb-3 mt-1 icon-swiper-mobile" />
                         </div>
                         <img src={nursingHRRG} className='img-fluid' alt="Departamento Enfermería" />
                     </motion.div>
@@ -61,11 +61,11 @@ const SwiperMobile: React.FC = React.memo(() => {
                         animate={{opacity: activeIndex === 1 ? 1 : 0}}
                         className="swiper-element"
                         >
-                        <h4 style={{color: '#04D004'}}>Portafolio fotógrafo</h4>
-                        <h4>Prototipo</h4>
+                        <h4 style={{color: '#04D004', fontWeight: 'bold'}}>Portafolio fotógrafo</h4>
+                        <h5>Prototipo</h5>
                         <div className="icon-container-mobile">
-                            <FontAwesomeIcon icon={faGithub} className="mb-3 icon-swiper-mobile" />
-                            <FontAwesomeIcon icon={faLaptop} className="mb-3 icon-swiper-mobile" />
+                            <FontAwesomeIcon icon={faGithub} className="mb-3 mt-1 icon-swiper-mobile" />
+                            <FontAwesomeIcon icon={faLaptop} className="mb-3 mt-1 icon-swiper-mobile" />
                         </div>
                         <img src={portfolio} className='img-fluid' alt="Prototipo Portafolio" />
                     </motion.div>
@@ -77,11 +77,11 @@ const SwiperMobile: React.FC = React.memo(() => {
                         animate={{opacity: activeIndex === 2 ? 1 : 0}}
                         className="swiper-element"
                         >
-                        <h4 style={{color: '#04D004'}}>Panel de información</h4>
+                        <h4 style={{color: '#04D004', fontWeight: 'bold'}}>Panel de información</h4>
                         <h4>Prototipo</h4>
                         <div className="icon-container-mobile">
-                            <FontAwesomeIcon icon={faGithub} className="mb-3 icon-swiper-mobile" />
-                            <FontAwesomeIcon icon={faLaptop} className="mb-3 icon-swiper-mobile" />
+                            <FontAwesomeIcon icon={faGithub} className="mb-3 mt-1 icon-swiper-mobile" />
+                            <FontAwesomeIcon icon={faLaptop} className="mb-3 mt-1 icon-swiper-mobile" />
                         </div>
                         <img src={dashboard} className='img-fluid' alt="Prototipo Dashboard" />
                     </motion.div>

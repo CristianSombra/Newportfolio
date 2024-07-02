@@ -9,7 +9,7 @@ const Experience: React.FC<AnimateProps> = ({ animate }) => {
             initial={{ opacity: 0 }}
             animate={animate ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.6 }}
-            className="container container-experience mt-md-5" 
+            className="container container-experience pt-md-5" 
             id="Experience"
             >
             
