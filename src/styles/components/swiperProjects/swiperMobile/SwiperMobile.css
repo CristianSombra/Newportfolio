@@ -14,7 +14,7 @@
 .swiper-element img {
     width: 100%;
     height: auto;
-    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent 50%, rgba(0, 0, 0, 0.3) 100%) !important;
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent 65%, rgba(0, 0, 0, 0.3) 100%) !important;
 }
 
 .swiper-pagination-bullet {
@@ -32,3 +32,14 @@
         padding: 5px !important;
     }
 }
+
+
+.icon-swiper-mobile {
+    margin: 0 16px;
+    font-size: 3em;
+    transition: color 0.3s ease;
+    color: #4d4d4d;
+}
+
+.icon-swiper-mobile:hover {
+    color: #04D004}

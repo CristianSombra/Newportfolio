@@ -3,9 +3,9 @@ import SwiperCore from 'swiper/core'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 import { nursingHRRG, portfolio, dashboard } from '../../../../assets';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faLaptop } from '@fortawesome/free-solid-svg-icons/faLaptop';
-// import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLaptop } from '@fortawesome/free-solid-svg-icons/faLaptop';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css';
@@ -44,45 +44,33 @@ const SwiperMobile: React.FC = React.memo(() => {
                 {/* Imagen con botones 1 */}
                 <SwiperSlide>
                     <div className="swiper-element">
+                        <div>
+                            <FontAwesomeIcon icon={faGithub} className="mb-3 icon-swiper-mobile" />
+                            <FontAwesomeIcon icon={faLaptop} className="mb-3 icon-swiper-mobile" />
+                        </div>
                         <img src={nursingHRRG} className='img-fluid' alt="Departamento Enfermería" />
-                        {/* <div className="row d-flex justify-content-center">
-                            <div className="col-6 col-md-4 col-lg-2 my-3">
-                                <FontAwesomeIcon icon={faGithub} className="icon-swiper" />
-                            </div>
-                            <div className="col-6 col-md-4 col-lg-2 my-3">
-                                <FontAwesomeIcon icon={faLaptop} className="icon-swiper" />
-                            </div>
-                        </div> */}
                     </div>
                 </SwiperSlide>
 
                 {/* Imagen con botones 2 */}
                 <SwiperSlide>
                     <div className="swiper-element">
+                        <div className="icon-container-mobile">
+                            <FontAwesomeIcon icon={faGithub} className="mb-3 icon-swiper-mobile" />
+                            <FontAwesomeIcon icon={faLaptop} className="mb-3 icon-swiper-mobile" />
+                        </div>
                         <img src={portfolio} className='img-fluid' alt="Prototipo Portafolio" />
-                        {/* <div className="row d-flex justify-content-center">
-                            <div className="col-6 col-md-4 col-lg-2 my-3">
-                                <FontAwesomeIcon icon={faGithub} className="icon-swiper" />
-                            </div>
-                            <div className="col-6 col-md-4 col-lg-2 my-3">
-                                <FontAwesomeIcon icon={faLaptop} className="icon-swiper" />
-                            </div>
-                        </div> */}
                     </div>
                 </SwiperSlide>
 
                 {/* Imagen con botones 3 */}
                 <SwiperSlide>
                     <div className="swiper-element">
+                        <div className="icon-container-mobile">
+                            <FontAwesomeIcon icon={faGithub} className="mb-3 icon-swiper-mobile" />
+                            <FontAwesomeIcon icon={faLaptop} className="mb-3 icon-swiper-mobile" />
+                        </div>
                         <img src={dashboard} className='img-fluid' alt="Prototipo Dashboard" />
-                        {/* <div className="row d-flex justify-content-center">
-                            <div className="col-6 col-md-4 col-lg-2 my-3">
-                                <FontAwesomeIcon icon={faGithub} className="icon-swiper" />
-                            </div>
-                            <div className="col-6 col-md-4 col-lg-2 my-3">
-                                <FontAwesomeIcon icon={faLaptop} className="icon-swiper" />
-                            </div>
-                        </div> */}
                     </div>
                 </SwiperSlide>
             </Swiper>

@@ -3,6 +3,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore from 'swiper/core'
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 import { nursingHRRG, portfolio, dashboard } from '../../../../assets';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLaptop } from '@fortawesome/free-solid-svg-icons/faLaptop';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css';
@@ -32,12 +35,24 @@ const SwiperDesktop: React.FC = React.memo(() => {
                         className="mySwiper"
                     >
                         <SwiperSlide>
+                            <div>
+                                <FontAwesomeIcon icon={faGithub} className="mb-3 icon-swiper-desktop" />
+                                <FontAwesomeIcon icon={faLaptop} className="mb-3 icon-swiper-desktop" />
+                            </div>
                             <img src={nursingHRRG} className='img-fluid' alt="Departamento Enfermería" />
                         </SwiperSlide>
                         <SwiperSlide>
+                            <div>
+                                <FontAwesomeIcon icon={faGithub} className="mb-3 icon-swiper-desktop" />
+                                <FontAwesomeIcon icon={faLaptop} className="mb-3 icon-swiper-desktop" />
+                            </div>
                             <img src={portfolio} className='img-fluid' alt="Prototipo Portafolio" />
                         </SwiperSlide>
                         <SwiperSlide>
+                            <div>
+                                <FontAwesomeIcon icon={faGithub} className="mb-3 icon-swiper-desktop" />
+                                <FontAwesomeIcon icon={faLaptop} className="mb-3 icon-swiper-desktop" />
+                            </div>
                             <img src={dashboard} className='img-fluid' alt="Prototipo Dashboard" />
                         </SwiperSlide>
                     </Swiper>
