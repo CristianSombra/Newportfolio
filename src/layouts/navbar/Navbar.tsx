@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useScrollToSection } from "../../hooks";
 import "@/styles";
 
 const Navbar: React.FC = React.memo(() => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 992);
     const { scrollToSection } = useScrollToSection();
 
     const toggleMenu = () => {
@@ -23,8 +24,14 @@ const Navbar: React.FC = React.memo(() => {
         scrollToSection(id)
     };
 
+    useEffect(() => {
+        const handleResize = () => setIsDesktop(window.innerWidth >= 992);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-black">
+        <nav className={`navbar navbar-expand-lg navbar-dark ${isDesktop && !isMenuOpen ? 'fixed-top fixed-top-desktop bg-none' : ''}`}>
             <div className="container mt-3 d-flex justify-content-end">
                     <div className={`custom-menu-button d-lg-none ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
                         <div></div>
