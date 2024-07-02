@@ -6,10 +6,12 @@ const useScrollToSection = () => {
     const scrollToSection = (id: string) => {
         const section = document.getElementById(id);
         if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
-
-            const yOffset = -((navRef.current?.offsetHeight || 0) - 60);
+            // Obtener la altura del navbar
+            const navHeight = navRef.current?.offsetHeight || 0;
+            // Calcular el desplazamiento teniendo en cuenta la altura del navbar
+            const yOffset = -navHeight + 200; // Ajustar el valor de -10 según sea necesario para el margen adicional
             const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
             window.scrollTo({ top: y, behavior: 'smooth' });
         }
     };
