@@ -1,9 +1,10 @@
-import React, { useState} from "react";
+import React, { useEffect, useState} from "react";
 import { motion } from "framer-motion";
 import "@/styles";
 
 
 const Navbar: React.FC = React.memo(() => {
+    const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 992);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -24,10 +25,14 @@ const Navbar: React.FC = React.memo(() => {
         }
     };
 
+    useEffect(() => {
+        const handleResize = () => setIsDesktop(window.innerWidth >= 992);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
     
     return (
-
-        <nav className="navbar navbar-expand-lg navbar-dark bg-black">
+        <nav className={`navbar navbar-expand-lg navbar-dark mt-2 ${isDesktop && !isMenuOpen ? 'fixed-top fixed-top-desktop bg-none' : ''}`}>
                 <div className="container mt-3 d-flex justify-content-end">
                     <div className={`custom-menu-button d-lg-none ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
                         <div></div>
@@ -43,7 +48,7 @@ const Navbar: React.FC = React.memo(() => {
                     >
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a href="#Home" className="nav-link active" onClick={closeMenu} aria-current="page">Inicio</a>
+                                <a href="#Home" className="nav-link active d-none d-md-none d-lg-block" onClick={closeMenu} aria-current="page">Inicio</a>
                             </li>
                             <li className="nav-item">
                                 <a href="#About" className="nav-link active" onClick={closeMenu} aria-current="page">Sobre mi</a>
