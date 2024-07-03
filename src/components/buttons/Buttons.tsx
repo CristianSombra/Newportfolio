@@ -1,20 +1,14 @@
 import React from "react";
-import { useScrollToSection, useDownloadPdf } from "../../hooks";
-import { Link } from "react-router-dom";
+import { useDownloadPdf } from "../../hooks";
 import "@/styles"
 
 const ButtonsDesktop: React.FC = React.memo(() => {
-    const { scrollToSection, navRef } = useScrollToSection();
     const { downloadPdf } = useDownloadPdf();
 
     const handleDownloadPdf = () => {
         const pdfCurriculum = '/Cristian Sombra.pdf'
         downloadPdf(pdfCurriculum)
     }
-
-    const handleScroll = (id: string) => {
-        scrollToSection(id);
-    };
 
     return(
         <div className="row d-flex justify-content-start mt-0 mt-md-3">
@@ -26,12 +20,12 @@ const ButtonsDesktop: React.FC = React.memo(() => {
                 </div>
             </div>
             <div className="col-12 col-md-6 col-lg-6 col-xl-4 d-none d-md-block">
-                <div className="py-3" ref={navRef}>
-                    <Link to="#Contact">
-                        <button className="btn-custom-2" onClick={() => handleScroll("Contact")}>
+                <div className="py-3">
+                    <a href="#Contact">
+                        <button className="btn-custom-2">
                             Contáctame
                         </button>
-                    </Link>
+                    </a>
                 </div>
             </div>
         </div>
@@ -39,7 +33,6 @@ const ButtonsDesktop: React.FC = React.memo(() => {
 });
 
 const ButtonsMobile: React.FC = React.memo(() => {
-    const { scrollToSection, navRef } = useScrollToSection();
     const { downloadPdf } = useDownloadPdf();
 
     const handleDownloadPdf = () => {
@@ -47,9 +40,6 @@ const ButtonsMobile: React.FC = React.memo(() => {
         downloadPdf(pdfCurriculum)
     }
 
-    const handleScroll = (id: string) => {
-        scrollToSection(id);
-    };
     return(
         <div className="row d-flex justify-content-center text-center d-block d-md-none">
             <div className="col-6">
@@ -59,13 +49,13 @@ const ButtonsMobile: React.FC = React.memo(() => {
                     </button>
                 </div>
             </div>
-            <div className="col-6" ref={navRef}>
+            <div className="col-6">
                 <div>
-                    <Link to="#Contact">
-                        <button className="btn-custom-2" onClick={() => handleScroll("Contact")}>
+                    <a href="#Contact">
+                        <button className="btn-custom-2">
                             Contacto
                         </button>
-                    </Link>
+                    </a>
                 </div>
             </div>
         </div>
