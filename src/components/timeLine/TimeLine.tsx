@@ -57,6 +57,7 @@ const TimeLine: React.FC = React.memo(() => {
                         <li className='text-white custom-li'>Python Básico a Avanzado</li>
                         <li className='text-white custom-li'>MongoDB Básico a Avanzado</li>
                         <li className='text-white custom-li'>PostreSQL Nivel Avanzado</li>
+                        <li className='text-white custom-li'>Estudiante de la carrera de Ciencia de datos e IA</li>
                     </ul>
                     <span className="left-container-arrow"></span>
                 </div>
