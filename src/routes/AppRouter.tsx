@@ -7,6 +7,10 @@ import {
     Contact
 } from "../pages";
 import { useInView } from "react-intersection-observer";
+import { Navbar, Footer } from '../layouts';
+import { ToastContainer } from "react-toastify";
+import { ScrollTop } from '../components';
+
 
 const AppRouter: React.FC = () => {
     const [homeRef, homeInView] = useInView({ threshold: 0.30 });
@@ -17,6 +21,7 @@ const AppRouter: React.FC = () => {
 
     return(
         <>
+        <Navbar />
             <div ref={homeRef}>
                 <Home animate={homeInView} />
             </div>
@@ -32,6 +37,9 @@ const AppRouter: React.FC = () => {
             <div ref={contactRef}>
                 <Contact animate={contactInView} />
             </div>
+            <Footer />
+            <ScrollTop />
+            <ToastContainer />
         </>
     );
 };
