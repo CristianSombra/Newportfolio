@@ -1,20 +1,20 @@
 {/* Services sections */}
-export const frontDevelop = "https://res.cloudinary.com/nursingstaff/image/upload/v1719352890/Portfolio/NewSection/About/front_code_azpol2.png";
-export const backDevelop = "https://res.cloudinary.com/nursingstaff/image/upload/v1719352890/Portfolio/NewSection/About/Back_code_jbdnyb.png";
-export const projects = "https://res.cloudinary.com/nursingstaff/image/upload/v1719352891/Portfolio/NewSection/About/proyectos_1_zrercr.png";
-export const design = "https://res.cloudinary.com/nursingstaff/image/upload/v1719352889/Portfolio/NewSection/About/uxui_1_ik70sh.png";
+export const frontDevelop = "https://res.cloudinary.com/nursingstaff/image/upload/v1720250562/Portfolio/NewSection/About/front_tjt80x.webp";
+export const backDevelop = "https://res.cloudinary.com/nursingstaff/image/upload/v1720250562/Portfolio/NewSection/About/back_ojmlnh.webp";
+export const projects = "https://res.cloudinary.com/nursingstaff/image/upload/v1720250562/Portfolio/NewSection/About/projects_ioms0b.webp";
+export const design = "https://res.cloudinary.com/nursingstaff/image/upload/v1720250561/Portfolio/NewSection/About/uxui_dwu3so.webp";
 
 {/* Timeline */}
-export const TA = "https://res.cloudinary.com/nursingstaff/image/upload/v1719415560/Portfolio/NewSection/Trajectory/Timeline/ta_mhmnmp.jpg";
-export const FS = "https://res.cloudinary.com/nursingstaff/image/upload/v1719415560/Portfolio/NewSection/Trajectory/Timeline/henry_plttyh.jpg";
-export const B5 = "https://res.cloudinary.com/nursingstaff/image/upload/v1719415560/Portfolio/NewSection/Trajectory/Timeline/B5_kwqqgs.png";
-export const UI = "https://res.cloudinary.com/nursingstaff/image/upload/v1719415560/Portfolio/NewSection/Trajectory/Timeline/ui_aspoxj.jpg";
-export const CS = "https://res.cloudinary.com/nursingstaff/image/upload/v1719415560/Portfolio/NewSection/Trajectory/Timeline/comingsoon_py9erc.jpg";
+export const TA = "https://res.cloudinary.com/nursingstaff/image/upload/v1720251293/Portfolio/NewSection/Trajectory/Timeline/ta_hyxc8r.webp";
+export const FS = "https://res.cloudinary.com/nursingstaff/image/upload/v1720251294/Portfolio/NewSection/Trajectory/Timeline/henry_knqxus.webp";
+export const B5 = "https://res.cloudinary.com/nursingstaff/image/upload/v1720251296/Portfolio/NewSection/Trajectory/Timeline/b5_dbuhal.webp";
+export const UI = "https://res.cloudinary.com/nursingstaff/image/upload/v1720251295/Portfolio/NewSection/Trajectory/Timeline/ui_tupgfh.webp";
+export const CS = "https://res.cloudinary.com/nursingstaff/image/upload/v1720251297/Portfolio/NewSection/Trajectory/Timeline/comingsoon_ij0ol2.webp";
 
 {/* Calendly contact */}
-export const imgCalendly = "https://res.cloudinary.com/nursingstaff/image/upload/v1716777748/Portfolio/index/calendly_gjme1k.png";
+export const imgCalendly = "https://res.cloudinary.com/nursingstaff/image/upload/v1720249927/Portfolio/index/calendly-Contact_fylhee.webp";
 
 {/* Projects */}
-export const nursingHRRG = "https://res.cloudinary.com/nursingstaff/image/upload/v1716775710/Portfolio/proyects/Departamento_enfermeria_n29dju.jpg";
-export const portfolio = "https://res.cloudinary.com/nursingstaff/image/upload/v1716775710/Portfolio/proyects/Prototivo_portafolio_l7jizt.jpg";
-export const dashboard = "https://res.cloudinary.com/nursingstaff/image/upload/v1716775710/Portfolio/proyects/Prototipo_dashboard_m1jaau.jpg";
+export const nursingHRRG = "https://res.cloudinary.com/nursingstaff/image/upload/v1720250880/Portfolio/proyects/departamento_ldc0rq.webp";
+export const portfolio = "https://res.cloudinary.com/nursingstaff/image/upload/v1720250881/Portfolio/proyects/portafolio_oiofbh.webp";
+export const dashboard = "https://res.cloudinary.com/nursingstaff/image/upload/v1720250881/Portfolio/proyects/dashboard_rrwfmy.webp";
