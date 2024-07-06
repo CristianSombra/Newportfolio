@@ -10,14 +10,16 @@ const Home: React.FC<AnimateProps>= ({ animate }) => {
             animate={animate ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.6 }}
             className="container-fluid py-2 py-md-5 mt-5 container-home" 
-            id="Home">
+            id="Home"
+            aria-labelledby="home-heading"
+            >
             
             <div className="row d-flex justify-content-center py-0 mb-lg-2 mt-lg-4">
                 
                 {/* Title */}
                 <div className="col-12 col-md-5 col-lg-4">
                     <h4>Cristian Sombra</h4>
-                    <h1>Full Stack</h1>
+                    <h1 id="home-heading">Full Stack</h1>
                     <h2>Developer</h2>
 
                     {/* Botones desktop */}
