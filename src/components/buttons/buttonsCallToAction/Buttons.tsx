@@ -1,5 +1,5 @@
 import React from "react";
-import { useDownloadPdf } from "../../hooks";
+import { useDownloadPdf } from "../../../hooks";
 import "@/styles"
 
 const ButtonsDesktop: React.FC = React.memo(() => {
