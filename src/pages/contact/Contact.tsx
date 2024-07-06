@@ -95,12 +95,13 @@ const Contact: React.FC<AnimateProps>= React.memo(({ animate }) => {
             transition={{ duration: 0.6 }}
             className="container container-contact my-2 py-md-3" 
             id="Contact"
+            aria-labelledby="contact-heading"
             >
                             
             <section className="row d-flex justify-content-center py-5">
                 <div className="col-12 col-md-8 col-lg-6">
                     <h2>Cuéntame</h2>
-                    <h1 className="text-white text-center">Tu Idea</h1>
+                    <h1 id="contact-heading" className="text-white text-center">Tu Idea</h1>
                 </div>
                 <div className="col-12 col-md-10 my-5">
                     <p className="fs-4 text-center">Siempre dispuesto a escuchar propuestas e ideas, con gusto puedes escribirme o agendar una cita para un nuevo proyecto.</p>
@@ -160,7 +161,7 @@ const Contact: React.FC<AnimateProps>= React.memo(({ animate }) => {
                                             >
                                                 
                                             </textarea>
-                                            <label htmlFor="mensaje" className="custom-label fs-5 ms-2">Mensaje</label>
+                                            <label htmlFor="message" className="custom-label fs-5 ms-2">Mensaje</label>
                                     </div>
                                 </motion.div>
                                 <motion.div 
@@ -174,6 +175,7 @@ const Contact: React.FC<AnimateProps>= React.memo(({ animate }) => {
                                         className="p-3 mt-4 mt-md-1 btn-custom-1"
                                         id="button" 
                                         value="Send Email"
+                                        aria-label="Enviar formulario de contacto"
                                         > 
                                         Enviar 
                                     </button>
@@ -186,7 +188,7 @@ const Contact: React.FC<AnimateProps>= React.memo(({ animate }) => {
                             animate={{x: 0, opacity: 1, filter: 'blur(0)'}}
                             transition={{duration: 1.6, delay: 0.6}}
                             >
-                            <img src={imgCalendly} alt="" className="img-fluid " style={{width: '308px'}}/>
+                            <img src={imgCalendly}  alt="Calendly" className="img-fluid " style={{width: '308px'}}/>
                             <p>Programa una entrevista</p>
                         </motion.div>
                         <div className="mt-3">
