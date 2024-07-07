@@ -24,7 +24,7 @@ const CalendlyPopupButton: React.FC = React.memo(() => {
     };
 
     return (
-        <div>
+        <section>
             <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
             <motion.div 
                 className="col text-center text-lg-end"
@@ -43,7 +43,7 @@ const CalendlyPopupButton: React.FC = React.memo(() => {
                     Agenda
                 </button>
             </motion.div>
-        </div>
+        </section>
     );
 });
 

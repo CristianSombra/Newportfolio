@@ -5,7 +5,7 @@ import '@/styles';
 
 const About: React.FC<AnimateProps>= ({ animate }) => {
     return(
-        <motion.div 
+        <motion.section 
             initial={{ opacity: 0 }}
             animate={animate ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.6 }}
@@ -19,12 +19,12 @@ const About: React.FC<AnimateProps>= ({ animate }) => {
                 <div className="col-12 col-md-10 col-lg-8">
                     <div className="row d-flex justify-content-start">
                         <div className="col-12">
-                            <h2>Hola! <span className="text-white" aria-hidden="true">Soy</span></h2>
+                            <h1 id="about-heading">Hola! <span className="text-white" aria-hidden="true">Soy</span></h1>
                         </div>
                     </div>
                     <div className="row">
                         <div className="col-12">
-                            <h1 id="about-heading" className="text-white text-center">Cristian Sombra</h1>
+                            <h2 className="text-white text-center">Cristian Sombra</h2>
                         </div>
                     </div>
                 </div>
@@ -43,7 +43,7 @@ const About: React.FC<AnimateProps>= ({ animate }) => {
             {/* Services */}
             <Cards />
 
-        </motion.div>
+        </motion.section>
     );
 };
 

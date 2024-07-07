@@ -89,7 +89,7 @@ const Contact: React.FC<AnimateProps>= React.memo(({ animate }) => {
 
 
     return(
-        <motion.div 
+        <motion.section 
             initial={{ opacity: 0 }}
             animate={animate ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.6 }}
@@ -100,8 +100,8 @@ const Contact: React.FC<AnimateProps>= React.memo(({ animate }) => {
                             
             <section className="row d-flex justify-content-center py-5">
                 <div className="col-12 col-md-8 col-lg-6">
-                    <h2>Cuéntame</h2>
-                    <h1 id="contact-heading" className="text-white text-center">Tu Idea</h1>
+                    <h1 id="contact-heading">Cuéntame</h1>
+                    <h2 className="text-white text-center">Tu Idea</h2>
                 </div>
                 <div className="col-12 col-md-10 my-5">
                     <p className="fs-4 text-center">Siempre dispuesto a escuchar propuestas e ideas, con gusto puedes escribirme o agendar una cita para un nuevo proyecto.</p>
@@ -119,7 +119,7 @@ const Contact: React.FC<AnimateProps>= React.memo(({ animate }) => {
                                 animate={{x: 0, opacity: 1, filter: 'blur(0)'}}
                                 transition={{duration: 1.6, delay: 0.6}}
                                 >
-                        <h2 className="text-white">Escríbeme</h2>
+                        <h3 className="text-white">Escríbeme</h3>
 
                                     <div className="col-12 col-md-6 mt-5 position-relative">
                                         <input 
@@ -198,7 +198,7 @@ const Contact: React.FC<AnimateProps>= React.memo(({ animate }) => {
                     
                 </div>
             </section>
-        </motion.div>
+        </motion.section>
     )
 })
 

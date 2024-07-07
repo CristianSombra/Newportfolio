@@ -5,7 +5,7 @@ import '@/styles';
 
 const Trajectory: React.FC <AnimateProps> = React.memo(({animate}) => {
     return(
-        <motion.div 
+        <motion.section 
             initial={{ opacity: 0 }}
             animate={animate ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.6 }}
@@ -17,8 +17,8 @@ const Trajectory: React.FC <AnimateProps> = React.memo(({animate}) => {
             {/* Title */}
             <div className="row d-flex justify-content-center py-5">
                 <div className="col-12 col-md-8 col-lg-5">
-                    <h2 className="ms-5 ms-md-3">Mi</h2>
-                    <h1 id="trajectory-heading" className="text-white text-center">Formación</h1>
+                    <h1 id="trajectory-heading" className="ms-5 ms-md-3">Mi</h1>
+                    <h2 className="text-white text-center">Formación</h2>
                 </div>
             </div>
 
@@ -32,7 +32,7 @@ const Trajectory: React.FC <AnimateProps> = React.memo(({animate}) => {
             {/* Timeline */}
             <TimeLine />
             
-        </motion.div>
+        </motion.section>
     );
 });
 

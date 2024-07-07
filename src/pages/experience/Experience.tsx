@@ -5,7 +5,7 @@ import "@/styles";
 
 const Experience: React.FC<AnimateProps> = ({ animate }) => {
     return(
-        <motion.div 
+        <motion.section 
             initial={{ opacity: 0 }}
             animate={animate ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.6 }}
@@ -17,8 +17,8 @@ const Experience: React.FC<AnimateProps> = ({ animate }) => {
             {/* Title */}
             <div className="row d-flex justify-content-center py-5">
                 <div className="col-12 col-md-9 col-lg-5">
-                    <h2>Mi</h2>
-                    <h1 id="experience-heading" className="text-white text-center">Experiencia</h1>
+                    <h1 id="experience-heading">Mi</h1>
+                    <h2 className="text-white text-center">Experiencia</h2>
                 </div>
             </div>
 
@@ -37,7 +37,7 @@ const Experience: React.FC<AnimateProps> = ({ animate }) => {
                 </div>
             </div>
 
-        </motion.div>
+        </motion.section>
     );
 };
 

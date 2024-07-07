@@ -1,5 +1,5 @@
 .container-home h1 {
-    font-size: 86px !important;
+    font-size: 84px !important;
     font-weight: bold !important;
     margin-top: -24px;
     margin-bottom: -18px;
@@ -21,20 +21,40 @@
 }
 
 @media (max-width: 1226px) {
-    .container-home h1 {
-        font-size: 74px !important;
+    .container-home h2 {
+        font-size: 70px !important;
     }
 }
 
-@media (max-width: 834px) {
+@media (max-width: 884px) {
     .container-home h1 {
+        font-size: 72px !important;
+    }
+
+    .container-home h2 {
         margin-top: -18px;
-        font-size: 64px !important;
+        font-size: 62px !important;
     }
 }
 
-@media (max-width: 320px) {
+@media (min-width: 769px) and (max-width: 834px) {
     .container-home h1 {
         font-size: 64px !important;
+    }
+
+    .container-home h2 {
+        margin-top: -18px;
+        font-size: 52px !important;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .container-home h1 {
+        font-size: 60px !important;
+    }
+
+    .container-home h2 {
+        margin-top: -18px;
+        font-size: 48px !important;
     }
 }
