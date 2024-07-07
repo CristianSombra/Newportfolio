@@ -3,7 +3,7 @@ import { SwiperMobile, SwiperDesktop} from './Swipers';
 
 const SwiperProjects: React.FC = React.memo(() => {
     return (
-        <div className="container">
+        <div className="container" aria-label="Proyectos destacados">
             <div className="row d-lg-none">
                 <SwiperMobile />
             </div>

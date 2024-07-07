@@ -24,7 +24,7 @@ const SwiperDesktop: React.FC = React.memo(() => {
     };
 
     return (
-        <div className="container swiper-container">
+        <div className="container swiper-container" aria-label='Proyectos destacados'>
             <div className="row">
                 <div className="col-12">
                     <Swiper
@@ -49,10 +49,10 @@ const SwiperDesktop: React.FC = React.memo(() => {
                                 >
                                 <h4 style={{color: '#04D004', fontWeight: 'bold'}}>Departamento de Enfermería</h4>
                                 <h5>Tierra del Fuego</h5>
-                                <a href="https://github.com/CristianSombra/NursingHRRG" target="_blank" rel="noopener norefererr">
+                                <a href="https://github.com/CristianSombra/NursingHRRG" target="_blank" rel="noopener norefererr" aria-label="Ver código en GitHub">
                                     <FontAwesomeIcon icon={faGithub} className="mb-3 icon-swiper-desktop" />
                                 </a>
-                                <a href="https://enfermeriahrrg.com.ar/" target="_blank" rel="noopener noreferrer">
+                                <a href="https://enfermeriahrrg.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Ver sitio web">
                                     <FontAwesomeIcon icon={faLaptop} className="mb-3 icon-swiper-desktop" />
                                 </a>
                             </motion.div>
@@ -64,10 +64,10 @@ const SwiperDesktop: React.FC = React.memo(() => {
                                 >
                                 <h4 style={{color: '#04D004', fontWeight: 'bold'}}>Portafolio fotógrafo</h4>
                                 <h5>Prototipo</h5>
-                                <a href="https://github.com/CristianSombra/Portafolioadaptable" target="_blank" rel="noopener noreferrer">
+                                <a href="https://github.com/CristianSombra/Portafolioadaptable" target="_blank" rel="noopener noreferrer" aria-label="Ver código en GitHub">
                                     <FontAwesomeIcon icon={faGithub} className="mb-3 icon-swiper-desktop" />
                                 </a>
-                                <a href="https://portafolioadaptable.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                <a href="https://portafolioadaptable.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Ver sitio web">
                                     <FontAwesomeIcon icon={faLaptop} className="mb-3 icon-swiper-desktop" />
                                 </a>
                             </motion.div>
@@ -79,10 +79,10 @@ const SwiperDesktop: React.FC = React.memo(() => {
                                 >
                                 <h4 style={{color: '#04D004', fontWeight: 'bold'}}>Panel de información</h4>
                                 <h4>Prototipo</h4>
-                                <a href="https://github.com/CristianSombra/Dashboardadaptable" target="_blank" rel="noopener noreferrer">
+                                <a href="https://github.com/CristianSombra/Dashboardadaptable" target="_blank" rel="noopener noreferrer" aria-label="Ver código en GitHub">
                                     <FontAwesomeIcon icon={faGithub} className="mb-3 icon-swiper-desktop" />
                                 </a>
-                                <a href="https://dashboardadaptable.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                <a href="https://dashboardadaptable.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Ver sitio web">
                                     <FontAwesomeIcon icon={faLaptop} className="mb-3 icon-swiper-desktop" />
                                 </a>
                             </motion.div>

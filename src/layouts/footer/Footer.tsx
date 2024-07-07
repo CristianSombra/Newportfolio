@@ -17,6 +17,7 @@ const Footer: React.FC = React.memo(() => {
                                     target="_blank" 
                                     rel="noopener noreferrer" 
                                     className="red-social"
+                                    aria-label="Instagram de Cristian Sombra"
                                 >
                                     <motion.div
                                         initial={{ y: -100, opacity: 0 }}
@@ -33,6 +34,7 @@ const Footer: React.FC = React.memo(() => {
                                     target="_blank" 
                                     rel="noopener noreferrer" 
                                     className="red-social"
+                                    aria-label="LinkedIn de Cristian Sombra"
                                 >
                                     <motion.div
                                         initial={{ y: -100, opacity: 0 }}
@@ -49,6 +51,7 @@ const Footer: React.FC = React.memo(() => {
                                     target="_blank" 
                                     rel="noopener noreferrer" 
                                     className="red-social"
+                                    aria-label="GitHub de Cristian Sombra"
                                 >
                                     <motion.div
                                         initial={{ y: -100, opacity: 0 }}
