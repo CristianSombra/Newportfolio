@@ -17,7 +17,7 @@
     height: auto;
     display: block;
     margin: 0 auto;
-    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent 65%, rgba(0, 0, 0, 0.2) 100%);
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent 75%, rgba(0, 0, 0, 0.2) 100%);
 }
 
 .swiper-pagination-bullet {
