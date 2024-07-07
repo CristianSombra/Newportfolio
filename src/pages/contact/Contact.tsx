@@ -8,7 +8,7 @@ import "@/styles";
 
 const Contact: React.FC<AnimateProps>= React.memo(({ animate }) => {
     const [formControl, setFormControl] = useState({
-        from_name: "",
+        name: "",
         email: "",
         message: "",
     });
@@ -45,13 +45,13 @@ const Contact: React.FC<AnimateProps>= React.memo(({ animate }) => {
     
     const resetForm = () => {
         setFormControl({
-            from_name: "",
+            name: "",
             email: "",
             message: "",
         });
     };
     
-    const handleChage = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const handlenChage = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         e.preventDefault();
         const { name, value } = e.target;
     
@@ -59,7 +59,7 @@ const Contact: React.FC<AnimateProps>= React.memo(({ animate }) => {
         let errorMessage = "";
     
         // Validación el campo Nombre y Apellido
-        if (name === "from_name") {
+        if (name === "name") {
             if (/[^a-zA-Z\s]/.test(value) || value.length > 20) {
                 isValid = false;
                 errorMessage =
@@ -127,12 +127,12 @@ const Contact: React.FC<AnimateProps>= React.memo(({ animate }) => {
                                             className="custom-input" 
                                             placeholder=" " 
                                             required
-                                            value={formControl.from_name}
-                                            onChange={handleChage}
-                                            name="from_name"
-                                            id="from_name"
+                                            value={formControl.name}
+                                            onChange={handlenChage}
+                                            name="name"
+                                            id="name"
                                             />
-                                        <label htmlFor="nombre" className="custom-label fs-5 ms-2">Nombre</label>
+                                        <label htmlFor="name" className="custom-label fs-5 ms-2">Nombre</label>
                                     </div>
                                     <div className="col-12 col-md-6 mt-5  position-relative">
                                         <input 
@@ -142,7 +142,7 @@ const Contact: React.FC<AnimateProps>= React.memo(({ animate }) => {
                                             name="email"
                                             id="email"
                                             value={formControl.email}
-                                            onChange={handleChage}
+                                            onChange={handlenChage}
                                             required
                                             />
                                         <label htmlFor="email" className="fs-5 ms-2 custom-label">Email</label>
@@ -156,12 +156,12 @@ const Contact: React.FC<AnimateProps>= React.memo(({ animate }) => {
                                             cols={30}
                                             rows={10}
                                             value={formControl.message}
-                                            onChange={handleChage}
+                                            onChange={handlenChage}
                                             required
                                             >
                                                 
                                             </textarea>
-                                            <label htmlFor="message" className="custom-label fs-5 ms-2">Mensaje</label>
+                                        <label htmlFor="message" className="custom-label fs-5 ms-2">Mensaje</label>
                                     </div>
                                 </motion.div>
                                 <motion.div 
