@@ -1,14 +1,18 @@
 .container-contact h1 {
+    font-size: 50px !important;
+    font-weight: bold !important;
+    color: #04D004 !important;
+}
+
+.container-contact h2 {
     font-size: 78px !important;
     font-weight: bold !important;
     margin-top: -24px;
     margin-bottom: -18px;
 }
 
-.container-contact h2 {
-    font-size: 50px !important;
-    font-weight: bold !important;
-    color: #04D004 !important;
+.container-contact h3 {
+    font-size: 40px;
 }
 
 .container-contact p {
@@ -18,48 +22,69 @@
 
 @media (min-width: 768px) and (max-width: 884px) {
     .container-contact h1 {
+        margin-left: 40px;
+        font-size: 44px !important;
+    }
+
+    .container-contact h2 {
         margin-top: -18px;
         font-size: 68px !important;
     }
 
-    .container-contact h2 {
-        margin-left: 40px;
-        font-size: 44px !important;
+    .container-contact h3 {
+        font-size: 36px;
+        text-align: center;
     }
 }
 
 @media (min-width: 376px) and (max-width: 428px) {
     .container-contact h1 {
+        margin-left: 36px;
+        font-size: 40px !important;
+    }
+
+    .container-contact h2 {
         margin-top: -16px;
         font-size: 54px !important;
     }
 
-    .container-contact h2 {
-        margin-left: 36px;
-        font-size: 40px !important;
+    .container-contact h3 {
+        font-size: 34px;
+        text-align: center;
     }
+
 }
 
 @media (min-width: 360px) and (max-width: 376px) {
     .container-contact h1 {
+        margin-left: 26px;
+        font-size: 34px !important;
+    }
+
+    .container-contact h2 {
         margin-top: -16px;
         font-size: 54px !important;
     }
 
-    .container-contact h2 {
-        margin-left: 26px;
-        font-size: 34px !important;
+    .container-contact h3 {
+        font-size: 34px;
+        text-align: center;
     }
 }
 
 @media (max-width: 320px) {
     .container-contact h1 {
+        margin-left: 38px;
+        font-size: 30px !important;
+    }
+
+    .container-contact h2 {
         margin-top: -14px;
         font-size: 36px !important;
     }
 
-    .container-contact h2 {
-        margin-left: 38px;
-        font-size: 30px !important;
+    .container-contact h3 {
+        font-size: 30px;
+        text-align: center;
     }
 }

@@ -1,11 +1,11 @@
 import React from "react";
 import { TA, FS, B5, UI, CS } from "../../assets";
-import "../../styles";
+import "@/styles";
 
 
 const TimeLine: React.FC = React.memo(() => {
     return(
-        <div className="container-timeline">
+        <section className="container-timeline">
             <div className="timeline">
                 <div className="container-line left-container">
                 <img src={TA} alt="Teaching Assistant"/>
@@ -63,7 +63,7 @@ const TimeLine: React.FC = React.memo(() => {
                 </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 });
 
