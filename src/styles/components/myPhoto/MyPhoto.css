@@ -1,4 +1,5 @@
 .img-custom {
+    width: 80%;
     mask-image: linear-gradient(
         black 80%,
         transparent
