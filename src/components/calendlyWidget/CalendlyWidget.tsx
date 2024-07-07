@@ -36,6 +36,9 @@ const CalendlyPopupButton: React.FC = React.memo(() => {
                     onClick={openCalendly}
                     type="button" 
                     className="p-3 mt-5 btn-custom-1"
+                    aria-label="Abrir Calendly para agendar una cita"
+                    tabIndex={0}
+                    role="button"
                 >
                     Agenda
                 </button>

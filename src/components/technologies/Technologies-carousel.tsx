@@ -4,13 +4,13 @@ import '@/styles';
 
 const TechnologiesCarousel: React.FC = React.memo(() => {
     return(
-        <div className="container">
+        <section className="container" aria-label="Lista de tecnologías utilizadas en el proyecto">
             <div className="row d-flex justify-content-center my-md-5">
                 <div className="col-12 col-10">
                     <TagList />
                 </div>
             </div>
-        </div>
+        </section>
     );
 });
 

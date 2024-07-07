@@ -4,12 +4,12 @@ import '@/styles';
 
 const CardComponent: React.FC<CardProps> = ({ imageUrl, title, text }) => {
     return(
-        <div className="card card-custom mt-5 my-md-5">
+        <div className="card card-custom mt-5 my-md-5" role="region" aria-labelledby="card-title" aria-describedby="card-text">
             <img src={imageUrl} className="card-img-top img-fluid" alt={title}/>
             <div className="card-body">
-                <h4 className="card-title mt-3">{title}</h4>
+                <h4 id="card-title" className="card-title mt-3">{title}</h4>
                 <hr className="text-white"/>
-                <p className="card-text">{text}</p>
+                <p id="card-text" className="card-text">{text}</p>
             </div>
         </div>
     );

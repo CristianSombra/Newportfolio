@@ -48,26 +48,25 @@ const Navbar: React.FC = React.memo(() => {
                     >
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a href="#Home" className="nav-link active d-none d-md-none d-lg-block" onClick={closeMenu} aria-current="page">Inicio</a>
+                                <a href="#Home" className="nav-link active d-none d-md-none d-lg-block" onClick={closeMenu} aria-label="Inicio">Inicio</a>
                             </li>
                             <li className="nav-item">
-                                <a href="#About" className="nav-link active" onClick={closeMenu} aria-current="page">Sobre mi</a>
+                                <a href="#About" className="nav-link active" onClick={closeMenu} aria-label="Sobre mí">Sobre mí</a>
                             </li>
                             <li className="nav-item">
-                                <a href="#Trajectory" className="nav-link active" onClick={closeMenu} aria-current="page">Formación</a>
+                                <a href="#Trajectory" className="nav-link active" onClick={closeMenu} aria-label="Formación">Formación</a>
                             </li>
                             <li className="nav-item">
-                                <a href="#Experience" className="nav-link active" onClick={closeMenu} aria-current="page">Experienca</a>
+                                <a href="#Experience" className="nav-link active" onClick={closeMenu} aria-label="Experiencia">Experienca</a>
                             </li>
                             <li className="nav-item">
-                                <a href="#Contact" className="nav-link active" onClick={closeMenu} aria-current="page">Contacto</a>
+                                <a href="#Contact" className="nav-link active" onClick={closeMenu} aria-label="Contacto">Contacto</a>
                             </li>
                         </ul>
                 </motion.div>
             </div>
         </nav>
-        
-        )
+    );
 })
 
 
