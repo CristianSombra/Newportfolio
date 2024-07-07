@@ -11,13 +11,14 @@ const Experience: React.FC<AnimateProps> = ({ animate }) => {
             transition={{ duration: 0.6 }}
             className="container container-experience pt-md-5" 
             id="Experience"
+            aria-labelledby="experience-heading"
             >
             
             {/* Title */}
             <div className="row d-flex justify-content-center py-5">
                 <div className="col-12 col-md-9 col-lg-5">
                     <h2>Mi</h2>
-                    <h1 className="text-white text-center">Experiencia</h1>
+                    <h1 id="experience-heading" className="text-white text-center">Experiencia</h1>
                 </div>
             </div>
 
