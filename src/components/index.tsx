@@ -2,7 +2,9 @@ import { lazy } from "react";
 import { ButtonsDesktop, ButtonsMobile } from "./buttons/buttonsCallToAction/Buttons";
 import { ButtonSeeMore } from "./buttons/buttonSeeMore/ButtonSeeMore";
 import { SpinnerLoading } from "./spinnerLoading/SpinnerLoading";
-import AnimateProps from "./animateSection/AnimateSection";
+import AnimateProps from "./props/animateSection/AnimateSection";
+import FormContactProps from "./props/formContact/FormContact";
+import FormContact from "./formContact/FormContact";
 import { MyPhoto } from "./myPhoto/MyPhoto";
 import TimeLine from "./timeLine/TimeLine"; 
 import CardProps from "./card/cardProps";
@@ -14,9 +16,11 @@ export const Cards = lazy(() => import("./cards/Cards"));
 export const CardComponent = lazy(() => import("./card/cardComponent"));
 export const CalendlyWidget = lazy(() => import("./calendlyWidget/CalendlyWidget"));
 export { ButtonsDesktop, ButtonsMobile };
+export type { FormContactProps }
 export type { AnimateProps }
 export type { CardProps };
 export { SpinnerLoading };
 export { ButtonSeeMore }
+export { FormContact }
 export { TimeLine };
 export { MyPhoto };
