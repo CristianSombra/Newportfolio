@@ -26,14 +26,14 @@ const Home: React.FC<AnimateProps>= ({ animate }) => {
                     <ButtonsDesktop />
 
                     <div className="row d-flex justify-content-center mt-lg-5">
-                        <div className="col-12 d-none d-lg-block mt-lg-5">
+                        <div className="col-12 d-none d-lg-block mt-lg-4">
                             <p>Apasionado del <strong style={{color: '#04D004'}}>código</strong> y amante de los desafíos.</p>
                         </div>
                     </div>
                 </div>
 
                 {/* Image */}
-                <div className="col-12 col-md-6 col-lg-4 text-end text-lg-center mt-3 mt-md-5">
+                <div className="col-12 col-md-6 col-lg-4 text-end text-lg-center mt-3 mt-lg-2">
                     <MyPhoto />
                 </div>
 
