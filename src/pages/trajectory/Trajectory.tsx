@@ -26,6 +26,8 @@ const Trajectory: React.FC <AnimateProps> = React.memo(({animate}) => {
             <div className="row d-flex justify-content-center text-center my-4 my-md-5">
                 <div className="col-12 col-md-11 col-lg-10">
                     <p>Mi formación abarcada tecnologías como HTML, CSS, JavaScript, y el uso de herramientas y frameworks modernos como Figma, Bootstrap 5, React, Redux, y bases de datos SQL y NoSQL. Actualmente, soy estudiante de la carrera de Ciencia de Datos e Inteligencia Artificial (AI), lo que me permite estar a la vanguardia en el análisis de datos y el desarrollo de soluciones inteligentes. Comprometido con la formación continua.</p>
+
+                    <p>En mi formación me fortalecí en habilidades tecnologicas clave como HTML, CSS, JavaScript y Python, así como en herramientas y frameworks modernos como Figma, Bootstrap 5, React y Redux. Además, tengo experiencia en creación de servidores y bases de datos tanto SQL como NoSQL. Actualmente, estoy estudiando Ciencia de Datos e Inteligencia Artificial (AI), lo cual me mantiene a la vanguardia en el análisis de datos y el desarrollo de soluciones inteligentes. Estoy comprometido con la formación continua para seguir innovando y creando valor.</p>
                 </div>
             </div>
 

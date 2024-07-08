@@ -104,7 +104,7 @@ const Contact: React.FC<AnimateProps>= React.memo(({ animate }) => {
                     <h2 className="text-white text-center">Tu Idea</h2>
                 </div>
                 <div className="col-12 col-md-10 my-5">
-                    <p className="fs-4 text-center">Siempre dispuesto a escuchar propuestas e ideas, con gusto puedes escribirme o agendar una cita para un nuevo proyecto.</p>
+                    <p className="fs-4 text-center">Siempre estoy disponible para escuchar propuestas e ideas. No dudes en contactarme o programar una cita para discutir nuevos proyectos.</p>
                 </div>
             </section>
             

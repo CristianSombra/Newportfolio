@@ -12,6 +12,7 @@ const About: React.FC<AnimateProps>= ({ animate }) => {
             className="container container-about py-2 py-md-5" 
             id="About"
             aria-labelledby="about-heading"
+            role="main"
             >
             
             {/* Title */}
@@ -33,7 +34,7 @@ const About: React.FC<AnimateProps>= ({ animate }) => {
             {/* Text */}
             <div className="row d-flex justify-content-center text-center my-4 my-md-5">
                 <div className="col-12 col-md-11 col-lg-10">
-                    <p>Soy un desarrollador que busca crear experiencias digitales excepcionales. Desde el frontend hasta el backend, mi enfoque se centra en transformar ideas creativas en soluciones funcionales.</p>
+                    <p>Soy un desarrollador que busca crear experiencias digitales excepcionales. Desde el frontend hasta el backend, mi enfoque se centra en transformar ideas creativas en soluciones funcionales y efectivas para mis clientes y usuarios finales.</p>
                 </div>
             </div>
 

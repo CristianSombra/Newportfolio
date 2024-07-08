@@ -1,20 +1,22 @@
 .container-home h1 {
+    margin-left: 4px;
+    font-size: 24px;
+    color: #808080 !important;
+}
+
+.container-home h2 {
     font-size: 84px !important;
     font-weight: bold !important;
     margin-top: -20px;
     margin-bottom: -18px;
 }
 
-.container-home h2 {
+.container-home h3 {
     font-size: 59px !important;
     font-weight: bold !important;
     color: #04D004 !important;
 }
 
-.container-home h4 {
-    margin-left: 4px;
-    color: #404040 !important;
-}
 
 .container-home p{
     font-size: 24px !important;
@@ -27,33 +29,33 @@
 }
 
 @media (max-width: 884px) {
-    .container-home h1 {
+    .container-home h2 {
         font-size: 72px !important;
     }
 
-    .container-home h2 {
+    .container-home h3 {
         margin-top: -18px;
         font-size: 62px !important;
     }
 }
 
 @media (min-width: 769px) and (max-width: 834px) {
-    .container-home h1 {
+    .container-home h2 {
         font-size: 64px !important;
     }
 
-    .container-home h2 {
+    .container-home h3 {
         margin-top: -18px;
         font-size: 52px !important;
     }
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
-    .container-home h1 {
+    .container-home h2 {
         font-size: 60px !important;
     }
 
-    .container-home h2 {
+    .container-home h3 {
         margin-top: -18px;
         font-size: 48px !important;
     }
