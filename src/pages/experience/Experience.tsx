@@ -25,7 +25,7 @@ const Experience: React.FC<AnimateProps> = ({ animate }) => {
             {/* Text */}
             <div className="row d-flex justify-content-center text-center my-4 my-md-5">
                 <div className="col-12 col-md-11 col-lg-10">
-                    <p>He acumulado una valiosa experiencia en proyectos estratégicos tanto en startups como en entornos freelance. Durante mi participación en simulaciones laborales en No Country, he fortalecido tanto mis soft skills como mis tech skills, enfocándome especialmente en potenciar el trabajo en equipo y la implementación de MVP (Minimum Viable Product).</p>
+                    <p>Durante mi carrera, he adquirido experiencia significativa en proyectos estratégicos dentro de startups y en entornos freelance. Participé en simulaciones laborales en No Country, donde fortalecí mis habilidades blandas y técnicas, enfocándome en el trabajo en equipo y la implementación de MVP (Producto Mínimo Viable).</p>
                 </div>
             </div>
 
