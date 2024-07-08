@@ -5,7 +5,7 @@ import '@/styles';
 
 const Home: React.FC<AnimateProps>= ({ animate }) => {
     return(
-        <motion.div 
+        <motion.section 
             initial={{ opacity: 0 }}
             animate={animate ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.6 }}
@@ -54,7 +54,7 @@ const Home: React.FC<AnimateProps>= ({ animate }) => {
                 </div>
             </div>
 
-        </motion.div>
+        </motion.section>
     );
 };
 
