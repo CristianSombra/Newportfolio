@@ -18,7 +18,7 @@ const Home: React.FC<AnimateProps>= ({ animate }) => {
             <div className="row d-flex justify-content-center py-0 mb-lg-2 mt-lg-4">
                 
                 {/* Title */}
-                <div className="col-12 col-md-5 col-lg-4">
+                <div className="col-12 col-md-5 col-lg-4 mt-0 mt-md-3">
                     <h1 id="home-heading">Cristian Sombra</h1>
                     <h2>Full Stack</h2>
                     <h3>Developer</h3>
@@ -34,7 +34,7 @@ const Home: React.FC<AnimateProps>= ({ animate }) => {
                 </div>
 
                 {/* Image */}
-                <div className="col-12 col-md-6 col-lg-4 text-end text-lg-center mt-3 mt-lg-2">
+                <div className="col-12 col-md-6 col-lg-4 text-end text-lg-center">
                     <MyPhoto />
                 </div>
 
