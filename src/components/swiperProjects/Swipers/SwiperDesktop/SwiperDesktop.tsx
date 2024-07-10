@@ -56,7 +56,7 @@ const SwiperDesktop: React.FC = React.memo(() => {
                                     <FontAwesomeIcon icon={faLaptop} className="mb-3 icon-swiper-desktop" />
                                 </a>
                             </motion.div>
-                            <img src={nursingHRRG} className='img-fluid' alt="Departamento Enfermería" />
+                            <img src={nursingHRRG} className='img-fluid' alt="Departamento Enfermería" loading="lazy"/>
                         </SwiperSlide>
                         <SwiperSlide>
                             <motion.div
@@ -71,7 +71,7 @@ const SwiperDesktop: React.FC = React.memo(() => {
                                     <FontAwesomeIcon icon={faLaptop} className="mb-3 icon-swiper-desktop" />
                                 </a>
                             </motion.div>
-                            <img src={portfolio} className='img-fluid' alt="Prototipo Portafolio" />
+                            <img src={portfolio} className='img-fluid' alt="Prototipo Portafolio" loading="lazy"/>
                         </SwiperSlide>
                         <SwiperSlide>
                             <motion.div
@@ -86,7 +86,7 @@ const SwiperDesktop: React.FC = React.memo(() => {
                                     <FontAwesomeIcon icon={faLaptop} className="mb-3 icon-swiper-desktop" />
                                 </a>
                             </motion.div>
-                            <img src={dashboard} className='img-fluid' alt="Prototipo Dashboard" />
+                            <img src={dashboard} className='img-fluid' alt="Prototipo Dashboard" loading="lazy"/>
                         </SwiperSlide>
                     </Swiper>
                 </div>

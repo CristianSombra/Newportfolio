@@ -55,7 +55,7 @@ const SwiperMobile: React.FC = React.memo(() => {
                                 <FontAwesomeIcon icon={faLaptop} className="mb-3 mt-1 icon-swiper-mobile" />
                             </a>
                         </div>
-                        <img src={nursingHRRG} className='img-fluid' alt="Departamento Enfermería" />
+                        <img src={nursingHRRG} className='img-fluid' alt="Departamento Enfermería" loading="lazy"/>
                     </motion.div>
                 </SwiperSlide>
 
@@ -75,7 +75,7 @@ const SwiperMobile: React.FC = React.memo(() => {
                                 <FontAwesomeIcon icon={faLaptop} className="mb-3 mt-1 icon-swiper-mobile" />
                             </a>
                         </div>
-                        <img src={portfolio} className='img-fluid' alt="Prototipo Portafolio" />
+                        <img src={portfolio} className='img-fluid' alt="Prototipo Portafolio" loading="lazy"/>
                     </motion.div>
                 </SwiperSlide>
 
@@ -96,7 +96,7 @@ const SwiperMobile: React.FC = React.memo(() => {
                             </a>
                             
                         </div>
-                        <img src={dashboard} className='img-fluid' alt="Prototipo Dashboard" />
+                        <img src={dashboard} className='img-fluid' alt="Prototipo Dashboard" loading="lazy"/>
                     </motion.div>
                 </SwiperSlide>
             </Swiper>
