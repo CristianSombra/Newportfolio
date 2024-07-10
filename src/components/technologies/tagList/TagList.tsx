@@ -18,7 +18,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={html} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="HTML" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -27,7 +26,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={css} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="CSS" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -36,7 +34,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={js} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="JavaScript" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -45,7 +42,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={bs} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="Bootstrap" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -54,7 +50,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={fig} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="Figma" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -63,7 +58,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={node} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="Node.js" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -72,7 +66,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={react} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="React" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -81,7 +74,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={redux} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="Redux" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -90,7 +82,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={ex} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="Express.js" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -99,7 +90,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={seq} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="Sequelize" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -108,7 +98,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={postg} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="PostgreSQL" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -117,7 +106,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={postm} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="Postman" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="fade"></div>
@@ -129,7 +117,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={html} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="HTML" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -138,7 +125,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={css} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="CSS" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -147,7 +133,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={js} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="JavaScript" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -156,7 +141,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={bs} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="Bootstrap" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -165,7 +149,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={fig} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="Figma" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -174,7 +157,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={node} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="Node.js" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -183,7 +165,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={react} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="React" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -192,7 +173,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={redux} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="Redux" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -201,7 +181,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={ex} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="Express.js" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -210,7 +189,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={seq} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="Sequelize" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -219,7 +197,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={postg} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="PostgreSQL" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -228,7 +205,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={postm} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="Postman" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="fade"></div>
@@ -251,7 +227,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={html} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="HTML" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -260,7 +235,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={css} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="CSS" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -269,7 +243,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={js} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="JavaScript" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -278,7 +251,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={bs} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="Bootstrap" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -287,7 +259,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={fig} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="Figma" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -296,7 +267,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={node} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="Node.js" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -305,7 +275,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={react} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="React" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -314,7 +283,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={redux} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="Redux" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -323,7 +291,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={ex} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="Express.js" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -332,7 +299,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={seq} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="Sequelize" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -341,7 +307,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={postg} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="PostgreSQL" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -350,7 +315,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={postm} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="Postman" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="fade"></div>
@@ -362,7 +326,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={html} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="HTML" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -371,7 +334,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={css} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="CSS" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -380,7 +342,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={js} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="JavaScript" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -389,7 +350,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={bs} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="Bootstrap" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -398,7 +358,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={fig} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="Figma" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -407,7 +366,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={node} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="Node.js" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -416,7 +374,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={react} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="React" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -425,7 +382,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={redux} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="Redux" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -434,7 +390,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={ex} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="Express.js" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -443,7 +398,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={seq} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="Sequelize" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -452,7 +406,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={postg} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="PostgreSQL" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="tag">
@@ -461,7 +414,6 @@ const TagList: React.FC = React.memo(() => {
                                     src={postm} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="Postman" 
-                                    loading="lazy"
                                 />
                             </div>
                             <div className="fade"></div>
