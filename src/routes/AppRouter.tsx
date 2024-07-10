@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
     Home,
     About,
@@ -19,9 +19,19 @@ const AppRouter: React.FC = () => {
     const [experienceRef, experienceInView] = useInView({ threshold: 0.25 });
     const [contactRef, contactInView] = useInView({ threshold: 0.25 });
 
+    const [isNavbarVisible, setIsNavbarVisible] = useState(false);
+
+    useEffect(() => {
+        if (aboutInView || trajectoryInView || experienceInView || contactInView) {
+            setIsNavbarVisible(true);
+        }
+        else setIsNavbarVisible(false);
+    }, [aboutInView]);
+
+
     return(
         <>
-        <Navbar />
+        {isNavbarVisible && <Navbar />}
             <div ref={homeRef}>
                 <Home animate={homeInView} />
             </div>
