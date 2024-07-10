@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { useInView } from 'react-intersection-observer';
 import { Navbar, Footer } from '../layouts';
 import { ToastContainer } from "react-toastify";
-import { ScrollTop } from '../components';
+import { ScrollTop, SpinnerLoading } from '../components';
 import {
     Home,
     About,
@@ -20,23 +20,33 @@ const AppRouter: React.FC = () => {
     const [contactRef, contactInView] = useInView({ threshold: 0.20 });
 
 
-    return(
+    return (
         <>
-        <Navbar />
+            <Navbar />
             <div ref={homeRef}>
-                <Home animate={homeInView} />
+                <Suspense fallback={<SpinnerLoading />}>
+                    <Home animate={homeInView} />
+                </Suspense>
             </div>
             <div ref={aboutRef}>
-                <About animate={aboutInView} />
+                <Suspense fallback={<SpinnerLoading />}>
+                    <About animate={aboutInView} />
+                </Suspense>
             </div>
             <div ref={trajectoryRef}>
-                <Trajectory animate={trajectoryInView} />
+                <Suspense fallback={<SpinnerLoading />}>
+                    <Trajectory animate={trajectoryInView} />
+                </Suspense>
             </div>
             <div ref={experienceRef}>
-                <Experience animate={experienceInView} />
+                <Suspense fallback={<SpinnerLoading />}>
+                    <Experience animate={experienceInView} />
+                </Suspense>
             </div>
             <div ref={contactRef}>
-                <Contact animate={contactInView} />
+                <Suspense fallback={<SpinnerLoading />}>
+                    <Contact animate={contactInView} />
+                </Suspense>
             </div>
             <Footer />
             <ScrollTop />
