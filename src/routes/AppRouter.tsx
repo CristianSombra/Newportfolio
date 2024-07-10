@@ -13,11 +13,11 @@ import {
 
 
 const AppRouter: React.FC = () => {
-    const [homeRef, homeInView] = useInView({ threshold: 0.30 });
-    const [aboutRef, aboutInView] = useInView({ threshold: 0.25 });
-    const [trajectoryRef, trajectoryInView] = useInView({ threshold: 0.25 });
-    const [experienceRef, experienceInView] = useInView({ threshold: 0.25 });
-    const [contactRef, contactInView] = useInView({ threshold: 0.25 });
+    const [homeRef, homeInView] = useInView({ threshold: 0.40 });
+    const [aboutRef, aboutInView] = useInView({ threshold: 0.20 });
+    const [trajectoryRef, trajectoryInView] = useInView({ threshold: 0.20 });
+    const [experienceRef, experienceInView] = useInView({ threshold: 0.20 });
+    const [contactRef, contactInView] = useInView({ threshold: 0.20 });
     const [isNavbarVisible, setIsNavbarVisible] = useState(false);
     const [isDesktop, setIsDesktop] = useState(window.innerWidth <= 992);
 
@@ -32,14 +32,9 @@ const AppRouter: React.FC = () => {
     }, []);
 
     useEffect(() => {
-        if (isDesktop) {
-            setIsNavbarVisible(true);
-        } else if (aboutInView || trajectoryInView || experienceInView || contactInView) {
-            setIsNavbarVisible(true);
-        } else {
-            setIsNavbarVisible(false);
-        }
+        setIsNavbarVisible(isDesktop || aboutInView || trajectoryInView || experienceInView || contactInView);
     }, [isDesktop, aboutInView, trajectoryInView, experienceInView, contactInView]);
+    
 
     return(
         <>
