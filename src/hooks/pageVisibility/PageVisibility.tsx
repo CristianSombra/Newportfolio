@@ -6,7 +6,7 @@ const usePageVisibility = () => {
     const [aboutRef, aboutInView] = useInView({ threshold: 0.20 });
     const [trajectoryRef, trajectoryInView] = useInView({ threshold: 0.20 });
     const [experienceRef, experienceInView] = useInView({ threshold: 0.20 });
-    const [contactRef, contactInView] = useInView({ threshold: 0.25 });
+    const [contactRef, contactInView] = useInView({ threshold: 0.20 });
     const [isNavbarVisible, setIsNavbarVisible] = useState(false);
     const [isDesktop, setIsDesktop] = useState(window.innerWidth <= 992);
 
