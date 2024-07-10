@@ -40,18 +40,11 @@ const TimeLine: React.FC = React.memo(() => {
             img: CS,
             title: "Cursando actualmente",
             date: "2024",
-            description: (
-                <ul className='text-start'>
-                    <li className='text-white'>Diseñador UX + Figma 2024</li> 
-                    <li className='text-white'>Python Básico a Avanzado</li>
-                    <li className='text-white'>MongoDB Básico a Avanzado</li>
-                    <li className='text-white'>PostgreSQL Nivel Avanzado</li>
-                    <li className='text-white'>Estudiante de la carrera de Ciencia de datos e IA</li>
-                </ul>
-            ),
+            description: "Diseñador UX, Python Básico a Avanzado, MongoDB Básico a Avanzado, PostgreSQL Nivel Avanzado, Estudiante de la carrera de Ciencia de datos e IA",
             containerClass: "left-container",
             arrowClass: "left-container-arrow"
         }
+        
     ];
 
     return (
