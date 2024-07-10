@@ -46,7 +46,7 @@ const Navbar: React.FC = React.memo(() => {
                     className={`collapse navbar-collapse justify-content-center text-center ${isMenuOpen ? 'show' : ''}`}
                     style={{ overflowY: isMenuOpen ? 'hidden' : 'visible' }}
                     >
-                        <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <ul className="navbar-nav ms-auto mb-lg-0">
                             <li className="nav-item">
                                 <a href="#Home" className="nav-link active d-none d-md-none d-lg-block" onClick={closeMenu} aria-label="Inicio">Inicio</a>
                             </li>
