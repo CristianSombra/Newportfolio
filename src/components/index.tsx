@@ -7,7 +7,7 @@ import FormContactProps from "./props/formContact/FormContact";
 import FormContact from "./formContact/FormContact";
 import { MyPhoto } from "./myPhoto/MyPhoto";
 import TimeLine from "./timeLine/TimeLine"; 
-import CardProps from "./card/cardProps";
+import CardProps from "./props/card/cardProps";
 
 export const ScrollTop = lazy(() => import("./scrollTop/ScrollTop"));
 export const TechnologiesCarousel = lazy(() => import("./technologies/Technologies-carousel"));

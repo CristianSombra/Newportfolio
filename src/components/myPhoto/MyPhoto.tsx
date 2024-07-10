@@ -8,6 +8,7 @@ export const MyPhoto: React.FC = React.memo(() => {
                 src={"https://res.cloudinary.com/nursingstaff/image/upload/v1720391426/Portfolio/NewSection/Home/IMG_7632-Photoroom_v9khon.webp"} 
                 className="img-fluid img-custom"
                 alt="Foto de perfil de mi portafolio"
+                loading="lazy"
             />
         </div>
     );
