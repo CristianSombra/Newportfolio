@@ -30,6 +30,22 @@ const useScrollVisibility = () => {
         }
     }, [isDesktop, aboutInView, trajectoryInView, experienceInView, contactInView]);
 
+    const handleNavItemClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+        // Evitar recarga de la página en dispositivos de escritorio
+        if (isDesktop) {
+            event.preventDefault();
+            const href = event.currentTarget.getAttribute("href");
+            if (href) {
+                const target = document.querySelector(href);
+                if (target) {
+                    setTimeout(() => {
+                        target.scrollIntoView({ behavior: "smooth" });
+                    }, 20);
+                }
+            }
+        }
+    };
+
     return {
         homeRef,
         homeInView,
@@ -41,7 +57,8 @@ const useScrollVisibility = () => {
         experienceInView,
         contactRef,
         contactInView,
-        isNavbarVisible
+        isNavbarVisible,
+        handleNavItemClick
     };
 };
 
