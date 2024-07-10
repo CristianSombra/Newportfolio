@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useInView } from 'react-intersection-observer';
 import { Navbar, Footer } from '../layouts';
 import { ToastContainer } from "react-toastify";
@@ -18,27 +18,11 @@ const AppRouter: React.FC = () => {
     const [trajectoryRef, trajectoryInView] = useInView({ threshold: 0.20 });
     const [experienceRef, experienceInView] = useInView({ threshold: 0.20 });
     const [contactRef, contactInView] = useInView({ threshold: 0.20 });
-    const [isNavbarVisible, setIsNavbarVisible] = useState(false);
-    const [isDesktop, setIsDesktop] = useState(window.innerWidth <= 992);
 
-    useEffect(() => {
-        const handleResize = () => {
-            setIsDesktop(window.innerWidth <= 992);
-        };
-        window.addEventListener('resize', handleResize);
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
-
-    useEffect(() => {
-        setIsNavbarVisible(isDesktop || aboutInView || trajectoryInView || experienceInView || contactInView);
-    }, [isDesktop, aboutInView, trajectoryInView, experienceInView, contactInView]);
-    
 
     return(
         <>
-        {isNavbarVisible && <Navbar />}
+        <Navbar />
             <div ref={homeRef}>
                 <Home animate={homeInView} />
             </div>
