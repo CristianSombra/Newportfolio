@@ -7,7 +7,7 @@
 
 .card-custom h4 {
     color: #04D004 !important;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold !important;
 }
 
@@ -19,4 +19,10 @@
 
 .card-custom:hover {
     box-shadow: 0 0 12px rgba(4, 208, 4, 0.765);
+}
+
+@media (max-width: 884px) {
+    .card-custom h4 {
+        font-size: 26px;
+    }
 }

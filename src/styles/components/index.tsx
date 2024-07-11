@@ -1,5 +1,6 @@
 import './spinnerLoading/SpinnerLoading.css';
 import './card/CardCustom.css';
+import './buttons/buttonsCallToAction/button/btn-custom.css';
 import './buttons/buttonsCallToAction/button 1/btn-custom-1.css';
 import './buttons/buttonsCallToAction/button 2/btn-custom-2.css';
 import './buttons/buttonSeeMore/ButtonSeeMore.css'

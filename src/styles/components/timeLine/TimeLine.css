@@ -5,6 +5,7 @@
 }
 
 .container-line h4 {
+    font-size: 28px;
     color: #04D004;
 }
 
@@ -61,7 +62,6 @@
     border-radius: 6px;
     font-size: 15px;
     border: none
-    /* border: 1px solid rgba(255, 255, 255, 0); */
 }
 
 .left-container{
@@ -167,7 +167,7 @@
     }
 
     .text-box h4 {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .text-box p {

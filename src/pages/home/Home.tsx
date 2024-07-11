@@ -9,13 +9,13 @@ const Home: React.FC<AnimateProps>= ({ animate }) => {
             initial={{ opacity: 0 }}
             animate={animate ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.6 }}
-            className="container-fluid py-2 py-md-5 mt-5 container-home" 
+            className="container-fluid py-2 py-md-5 mt-4 mt-lg-5 container-home" 
             id="Home"
             aria-labelledby="home-heading"
             role="banner"
             >
             
-            <div className="row d-flex justify-content-center py-0 mb-lg-2 mt-lg-4">
+            <div className="row d-flex justify-content-center py-0 mb-lg-2 mt-lg-5">
                 
                 {/* Title */}
                 <div className="col-12 col-md-5 col-lg-4 mt-0 mt-md-3">
