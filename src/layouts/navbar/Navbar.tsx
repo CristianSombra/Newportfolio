@@ -35,7 +35,7 @@ const Navbar: React.FC = React.memo(() => {
         <motion.nav 
             initial={{opacity: 0}}
             animate={{opacity: 1}}
-            transition={{duration: 0.6, delay: 0.5}}
+            transition={{duration: 0.6, delay: 0.8}}
             className={`navbar navbar-expand-lg navbar-dark mt-2 ${isDesktop && !isMenuOpen ? 'fixed-top fixed-top-desktop bg-none' : ''}`}>
                 <div className="container mt-3 d-flex justify-content-end">
                     <div className={`custom-menu-button d-lg-none ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>

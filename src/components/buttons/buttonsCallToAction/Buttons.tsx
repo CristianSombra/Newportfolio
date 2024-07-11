@@ -11,7 +11,7 @@ const ButtonsDesktop: React.FC = React.memo(() => {
     }
 
     return(
-        <div className="row d-flex justify-content-start mt-0 mt-md-3">
+        <div className="row d-flex justify-content-start mt-0 mt-md-4">
             <div className="col-12 col-md-6 col-lg-6 col-xl-4 d-none d-md-block">
                 <div className="py-3">
                     <button className="btn-custom-1" onClick={handleDownloadPdf}>
@@ -22,7 +22,7 @@ const ButtonsDesktop: React.FC = React.memo(() => {
             <div className="col-12 col-md-6 col-lg-6 col-xl-4 d-none d-md-block">
                 <div className="py-3">
                     <a href="#Contact" role="button">
-                        <button className="btn-custom-2" aria-label="Ir a la sección de contacto" tabIndex={0}>
+                        <button className="btn-custom" aria-label="Ir a la sección de contacto" tabIndex={0}>
                             Contáctame
                         </button>
                     </a>
@@ -44,7 +44,7 @@ const ButtonsMobile: React.FC = React.memo(() => {
         <div className="row d-flex justify-content-center text-center d-block d-md-none">
             <div className="col-6">
                 <div>
-                    <button className="btn-custom-1" onClick={handleDownloadPdf}>
+                    <button className="btn-custom-2" onClick={handleDownloadPdf}>
                         Currículum
                     </button>
                 </div>
@@ -52,7 +52,7 @@ const ButtonsMobile: React.FC = React.memo(() => {
             <div className="col-6">
                 <div>
                     <a href="#Contact" role="button">
-                        <button className="btn-custom-2" aria-label="Ir a la sección de contacto" tabIndex={0}>
+                        <button className="btn-custom" aria-label="Ir a la sección de contacto" tabIndex={0}>
                             Contacto
                         </button>
                     </a>

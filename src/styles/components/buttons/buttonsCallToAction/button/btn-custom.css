@@ -1,21 +1,17 @@
-button.btn-custom-1 {
+button.btn-custom {
     background-color: black;
-    border: 1px solid #04D004; 
-    border-radius: 18px;
-    padding: 20px 28px; 
-    color: #04D004; 
-    font-size: 20px;
+    border-radius: 18px; 
+    color: #fff;
+    padding: 20px 28px;
     position: relative;
-    display: inline-block;
     cursor: pointer;
     outline: none;
     vertical-align: middle;
     text-decoration: none;
-    font-family: inherit;
-    transition: color 0.4s ease, border 0.4s ease, background-color 0.4s ease;
+    font-size: 20px;
 }
 
-button.btn-custom-1::before {
+button.btn-custom::before {
     content: "";
     position: absolute;
     top: 0;
@@ -38,28 +34,37 @@ button.btn-custom-1::before {
     border-radius: 10px;
     filter: blur(8px);
     animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: transform 0.2s ease;
 }
 
-button.btn-custom-1:hover {
-    border-color: transparent;
-    color: white;
-    background-color: black;
-}
-
-button.btn-custom-1:hover::before {
-    opacity: 1;
+button.btn-custom:hover::before {
+    transform: scale(1.05);
 }
 
 
-@media (max-width: 768px) {
-    .btn-custom-1 {
-        font-size: 20px;
-        padding: 14px 20px;
+@media (min-width: 768px) and (max-width: 884px) {
+    .btn-custom {
+        margin-left: 30px;
+    }
+    button.btn-custom:hover::before {
+        transform: scale(1);
     }
 }
 
+@media (max-width: 768px) {
+    .btn-custom {
+        padding: 14px 30px;
+    }
+    button.btn-custom:hover::before {
+        transform: scale(1);
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1366px) {
+    .btn-custom {
+        margin-left: 34px;
+    }
+}
 
 @keyframes glowing {
     0% {
