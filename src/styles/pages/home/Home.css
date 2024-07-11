@@ -12,14 +12,62 @@
 }
 
 .container-home h3 {
-    font-size: 59px !important;
+    font-family: "Roboto", sans-serif !important;
+    font-size: 50px !important;
     font-weight: bold !important;
-    color: #04D004 !important;
+    color: transparent;
+    position: relative;
+    text-transform: uppercase;
+    overflow: hidden;
 }
 
+.container-home h3::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #04D004;
+    border-right: 2px solid #04D004;
+    overflow: hidden;
+    animation: animate 1.5s linear forwards;
+}
+
+@keyframes animate {
+    0% {
+        width: 0;
+    }
+    40% {
+        width: 0;
+    }
+    100% {
+        width: 52%;
+    }
+}
 
 .container-home p{
     font-size: 24px !important;
+}
+
+
+@media (min-width: 885px) and (max-width: 1280px) {
+    .container-home h3 {
+        margin-top: -18px;
+        font-size: 50px !important;
+    }
+
+    @keyframes animate {
+        0% {
+            width: 0;
+        }
+        40% {
+            width: 0;
+        }
+        100% {
+            width: 80%;
+        }
+    }
 }
 
 @media (max-width: 1226px) {
@@ -28,35 +76,144 @@
     }
 }
 
-@media (max-width: 884px) {
-    .container-home h2 {
-        font-size: 72px !important;
-    }
 
-    .container-home h3 {
-        margin-top: -18px;
+@media (min-width: 834px) and (max-width: 884px) {
+    .container-home h2 {
         font-size: 62px !important;
     }
+
+    .container-home h3 {
+        margin-top: -18px;
+        font-size: 36px !important;
+    }
+
+    @keyframes animate {
+        0% {
+            width: 0;
+        }
+        40% {
+            width: 0;
+        }
+        100% {
+            width: 70%;
+        }
+    }
 }
 
-@media (min-width: 769px) and (max-width: 834px) {
+@media (min-width: 768px) and (max-width: 833px) {
     .container-home h2 {
-        font-size: 64px !important;
+        font-size: 62px !important;
     }
 
     .container-home h3 {
         margin-top: -18px;
-        font-size: 52px !important;
+        font-size: 36px !important;
+    }
+
+    @keyframes animate {
+        0% {
+            width: 0;
+        }
+        40% {
+            width: 0;
+        }
+        100% {
+            width: 78%;
+        }
     }
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 431px) and (max-width: 767px) {
     .container-home h2 {
         font-size: 60px !important;
     }
 
     .container-home h3 {
-        margin-top: -18px;
-        font-size: 48px !important;
+        font-size: 47px !important;
+    }
+
+    @keyframes animate {
+        0% {
+            width: 0;
+        }
+        40% {
+            width: 0;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+}
+
+
+
+
+@media (max-width: 430px) {
+    .container-home h2 {
+        margin-bottom: -10px;
+        font-size: 54px !important;
+    }
+
+    .container-home h3 {
+        font-size: 30px !important;
+    }
+
+    @keyframes animate {
+        0% {
+            width: 0;
+        }
+        40% {
+            width: 0;
+        }
+        100% {
+            width: 55%;
+        }
+    }
+}
+
+@media (max-width: 374px) {
+    .container-home h3 {
+        font-size: 28px !important;
+    }
+
+    @keyframes animate {
+        0% {
+            width: 0;
+        }
+        40% {
+            width: 0;
+        }
+        100% {
+            width: 55%;
+        }
+    }
+}
+
+@media (min-width: 393px) and (max-width: 428px) {
+    .container-home h3 {
+        font-size: 28px !important;
+    }
+
+    @keyframes animate {
+        0% {
+            width: 0;
+        }
+        40% {
+            width: 0;
+        }
+        100% {
+            width: 45%;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .container-home h2 {
+        margin-bottom: -10px;
+        font-size: 46px !important;
+    }
+
+    .container-home h3 {
+        font-size: 26px !important;
     }
 }

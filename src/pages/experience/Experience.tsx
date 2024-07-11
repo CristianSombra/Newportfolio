@@ -17,8 +17,21 @@ const Experience: React.FC<AnimateProps> = ({ animate }) => {
             {/* Title */}
             <div className="row d-flex justify-content-center py-5">
                 <div className="col-12 col-md-9 col-lg-5">
-                    <h1 id="experience-heading">Mi</h1>
-                    <h2 className="text-white text-center">Experiencia</h2>
+                    <motion.h1 
+                        id="experience-heading"
+                        initial={{x:-20, opacity: 0}}
+                        animate={animate ? {x: 0, opacity: 1} : {}}
+                        transition={{duration: 0.6, delay: 0.2, ease: "easeInOut"}}
+                        >
+                            Mi
+                    </motion.h1>
+                    <motion.h2 
+                        initial={{opacity: 0, filter: 'blur(8px)'}}
+                        animate={animate ? {opacity: 1, filter: 'blur(0px)'} : {}}
+                        transition={{duration: 0.6, delay: 0.3, ease: "easeInOut"}}
+                        className="text-white text-center">
+                            Experiencia
+                    </motion.h2>
                 </div>
             </div>
 
