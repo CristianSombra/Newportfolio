@@ -2,6 +2,7 @@ button.btn-custom {
     background-color: black;
     border-radius: 18px; 
     color: #fff;
+    margin-left: 20px;
     padding: 20px 28px;
     position: relative;
     cursor: pointer;
