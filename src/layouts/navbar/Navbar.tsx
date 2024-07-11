@@ -33,7 +33,7 @@ const Navbar: React.FC = React.memo(() => {
     
     return (
         <motion.nav 
-            initial={{opacity: 0}}
+            initial={{opacity: !isDesktop ? 1 : 0}}
             animate={{opacity: 1}}
             transition={{duration: 0.6, delay: 0.8}}
             className={`navbar navbar-expand-lg navbar-dark mt-2 ${isDesktop && !isMenuOpen ? 'fixed-top fixed-top-desktop bg-none' : ''}`}>
