@@ -4,6 +4,7 @@ import { TechnologiesCarousel, Cards, AnimateProps } from "../../components/";
 import '@/styles';
 
 const About: React.FC<AnimateProps>= ({ animate }) => {
+
     return(
         <motion.section 
             initial={{ opacity: 0 }}
@@ -20,12 +21,25 @@ const About: React.FC<AnimateProps>= ({ animate }) => {
                 <div className="col-12 col-md-10 col-lg-8">
                     <div className="row d-flex justify-content-start">
                         <div className="col-12">
-                            <h1 id="about-heading">Hola! <span className="text-white" aria-hidden="true">Soy</span></h1>
+                            <motion.h1 
+                                id="about-heading"
+                                initial={{x:-50, opacity: 0}}
+                                animate={animate ? {x: 0, opacity: 1} : {}}
+                                transition={{duration: 0.6, delay: 0.2, ease: "easeInOut"}}
+                                >
+                                    Hola!<span className="text-white" aria-hidden="true">Soy</span>
+                            </motion.h1>
                         </div>
                     </div>
                     <div className="row">
                         <div className="col-12">
-                            <h2 className="text-white text-center">Cristian Sombra</h2>
+                            <motion.h2 
+                                initial={{opacity: 0, filter: 'blur(8px)'}}
+                                animate={animate ? {opacity: 1, filter: 'blur(0px)'} : {}}
+                                transition={{duration: 0.6, delay: 0.3, ease: "easeInOut"}}
+                                className="text-white text-center">
+                                    Cristian Sombra
+                            </motion.h2>
                         </div>
                     </div>
                 </div>

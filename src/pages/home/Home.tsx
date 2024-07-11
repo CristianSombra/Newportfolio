@@ -19,9 +19,22 @@ const Home: React.FC<AnimateProps>= ({ animate }) => {
                 
                 {/* Title */}
                 <div className="col-12 col-md-5 col-lg-4 mt-0 mt-md-3">
-                    <h1 id="home-heading">Cristian Sombra</h1>
-                    <h2>Full Stack</h2>
-                    <h3>Developer</h3>
+                    <motion.h1
+                        id="home-heading"
+                        initial={{opacity: 0}}
+                        animate={animate ? {opacity: 1} : {}}
+                        transition={{duration: 0.6, delay: 0.2, ease: "easeInOut"}}
+                        >
+                            Cristian Sombra
+                    </motion.h1>
+                    <motion.h2
+                        initial={{x:60, opacity: 0, filter: 'blur(10px)'}}
+                        animate={animate ? {x: 0, opacity: 1, filter: 'blur(0px)'} : {}}
+                        transition={{duration: 0.6, delay: 0.5, ease: "easeInOut"}}
+                        >
+                        Full Stack
+                    </motion.h2>
+                    <h3 data-text="Developer">Developer</h3>
 
                     {/* Botones desktop */}
                     <ButtonsDesktop />

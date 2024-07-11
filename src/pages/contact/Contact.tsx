@@ -19,8 +19,21 @@ const Contact: React.FC<AnimateProps> = React.memo(({ animate }) => {
         >
             <section className="row d-flex justify-content-center py-5">
                 <div className="col-12 col-md-8 col-lg-6">
-                    <h1 id="contact-heading">Cuéntame</h1>
-                    <h2 className="text-white text-center">Tu Idea</h2>
+                    <motion.h1 
+                        id="contact-heading"
+                        initial={{x:-50, opacity: 0}}
+                        animate={animate ? {x: 0, opacity: 1} : {}}
+                        transition={{duration: 0.6, delay: 0.2, ease: "easeInOut"}}
+                        >
+                            Cuéntame
+                        </motion.h1>
+                    <motion.h2 
+                        initial={{opacity: 0, filter: 'blur(8px)'}}
+                        animate={animate ? {opacity: 1, filter: 'blur(0px)'} : {}}
+                        transition={{duration: 0.6, delay: 0.3, ease: "easeInOut"}}
+                        className="text-white text-center">
+                            Tu Idea
+                    </motion.h2>
                 </div>
                 <div className="col-12 col-md-10 my-5">
                     <p className="fs-4 text-center">
