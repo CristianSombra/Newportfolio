@@ -37,7 +37,7 @@ const Contact: React.FC<AnimateProps> = React.memo(({ animate }) => {
                 </div>
                 <div className="col-12 col-md-10 my-5">
                     <p className="fs-4 text-center">
-                        Siempre estoy disponible para escuchar propuestas e ideas. No dudes en contactarme o programar una cita para discutir nuevos proyectos.
+                        Siempre estoy disponible para escuchar nuevas propuestas, ideas o proyectos innovadores en tu industria o área de especialización.
                     </p>
                 </div>
             </section>
