@@ -1,9 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { DisplayText } from "../../components";
 import { ButtonsDesktop, ButtonsMobile, ButtonSeeMore, MyPhoto, AnimateProps } from "../../components";
 import '@/styles';
 
 const Home: React.FC<AnimateProps>= ({ animate }) => {
+
     return(
         <motion.section 
             initial={{ opacity: 0 }}
@@ -30,11 +32,13 @@ const Home: React.FC<AnimateProps>= ({ animate }) => {
                     <motion.h2
                         initial={{x:60, opacity: 0, filter: 'blur(10px)'}}
                         animate={animate ? {x: 0, opacity: 1, filter: 'blur(0px)'} : {}}
-                        transition={{duration: 0.6, delay: 0.5, ease: "easeInOut"}}
+                        transition={{duration: 0.8, delay: 0.6, ease: "easeInOut"}}
                         >
                         Full Stack
                     </motion.h2>
-                    <h3 data-text="Developer">Developer</h3>
+                    <h3>
+                        <DisplayText animate={animate} />
+                    </h3>
 
                     {/* Botones desktop */}
                     <ButtonsDesktop />
