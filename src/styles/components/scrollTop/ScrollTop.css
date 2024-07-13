@@ -1,14 +1,14 @@
 #scroll-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 20px !important;
     display: none;
     color: #04D004;
     border: 1px solid #04D004;
     width: 60px;
     height: 60px;
-    animation: bounceUp 2s;
-    z-index: 1000;
+    animation: bounceUp 2s !important;
+    z-index: 1000 !important;
 }
 
 #scroll-to-top:hover {
@@ -24,11 +24,5 @@
     }
     60% {
         transform: translateY(-10px);
-    }
-}
-
-@media (max-width: 768px) {
-    #scroll-to-top {
-        right: 20px;
     }
 }
