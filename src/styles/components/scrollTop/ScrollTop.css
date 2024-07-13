@@ -26,3 +26,9 @@
         transform: translateY(-10px);
     }
 }
+
+@media (max-width: 768px) {
+    #scroll-to-top {
+        right: 20px;
+    }
+}
