@@ -68,6 +68,9 @@ const Footer: React.FC = React.memo(() => {
                     <div className="col-12 text-center text-white my-3">
                         <div className="fs-6 me-1">Cristian Sombra - 2024</div>
                     </div>
+                    <div className="col-12 text-center d-block d-md-none">
+                        <hr/>
+                    </div>
                 </div>
                     <ScrollTopFooter />
             </div>
