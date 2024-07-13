@@ -1,8 +1,10 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { motion } from "framer-motion";
 import "@/styles";
+import { ScrollTopFooter } from "../../components";
 
 const Footer: React.FC = React.memo(() => {
     return(
@@ -68,6 +70,7 @@ const Footer: React.FC = React.memo(() => {
                         <div className="fs-6 me-1">Cristian Sombra - 2024</div>
                     </div>
                 </div>
+                    <ScrollTopFooter />
             </div>
         </footer>
     );
