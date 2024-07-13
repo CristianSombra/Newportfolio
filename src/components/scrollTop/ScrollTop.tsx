@@ -42,9 +42,9 @@ const ScrollTop: React.FC = () => {
     };
 
     return (
-        <button id="scroll-to-top" className="btn" onClick={scrollToTop}>
+        <span id="scroll-to-top" className="btn" onClick={scrollToTop}>
             <FontAwesomeIcon icon={faArrowUp} />
-        </button>
+        </span>
     );
 };
 
