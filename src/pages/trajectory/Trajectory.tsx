@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { AnimateProps, TimeLine } from "../../components";
+import { AnimateProps } from "../../components";
 import '@/styles';
 
 const Trajectory: React.FC <AnimateProps> = React.memo(({animate}) => {
@@ -44,7 +44,7 @@ const Trajectory: React.FC <AnimateProps> = React.memo(({animate}) => {
             </div>
 
             {/* Timeline */}
-            <TimeLine />
+            {/* <TimeLine /> */}
             
         </motion.section>
     );
