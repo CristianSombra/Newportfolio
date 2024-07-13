@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import { useInView } from 'react-intersection-observer';
 import { Navbar, Footer } from '../layouts';
 import { ToastContainer } from "react-toastify";
-import { ScrollTop, SpinnerLoading } from '../components';
+import { SpinnerLoading } from '../components';
 import {
     Home,
     About,
@@ -23,7 +23,6 @@ const AppRouter: React.FC = () => {
     return (
         <>
             <Navbar />
-            <ScrollTop />
             <div ref={homeRef}>
                 <Suspense fallback={<SpinnerLoading />}>
                     <Home animate={homeInView} />
