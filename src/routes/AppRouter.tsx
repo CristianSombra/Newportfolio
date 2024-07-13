@@ -23,6 +23,7 @@ const AppRouter: React.FC = () => {
     return (
         <>
             <Navbar />
+            <ScrollTop />
             <div ref={homeRef}>
                 <Suspense fallback={<SpinnerLoading />}>
                     <Home animate={homeInView} />
@@ -49,7 +50,6 @@ const AppRouter: React.FC = () => {
                 </Suspense>
             </div>
             <Footer />
-            <ScrollTop />
             <ToastContainer />
         </>
     );
