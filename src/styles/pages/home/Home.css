@@ -35,8 +35,18 @@
     }
 }
 
-@media (min-width: 320px) and (max-width: 428px) {
+@media (min-width: 321px) and (max-width: 428px) {
     .container-home h2 {
         font-size: 62px !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .container-home h2 {
+        font-size: 58px !important;
+    }
+
+    .container-home h3 {
+        font-size: 44px !important;
     }
 }

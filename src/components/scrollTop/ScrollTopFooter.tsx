@@ -1,6 +1,4 @@
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import "@/styles";
 
 const ScrollTopFooter: React.FC = () => {
@@ -15,9 +13,9 @@ const ScrollTopFooter: React.FC = () => {
 
     return (
             
-        <div className='col-12 d-block d-md-none'>
-            <button id="scroll-to-top-footer" className="btn-custom-footer" onClick={scrollToTop}>
-                <FontAwesomeIcon icon={faArrowUp} />
+        <div className='col-12 d-block d-md-none my-3'>
+            <button id="scroll-to-top-footer" className="btn-custom-footer fs-5" onClick={scrollToTop}>
+                Volver a Inicio
             </button>
         </div>
     );

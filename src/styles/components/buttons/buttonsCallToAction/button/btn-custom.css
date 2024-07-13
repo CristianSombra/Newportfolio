@@ -2,13 +2,11 @@ button.btn-custom {
     background-color: black;
     border-radius: 18px; 
     color: #fff;
-    margin-left: 20px;
     padding: 20px 28px;
     position: relative;
     cursor: pointer;
     outline: none;
     vertical-align: middle;
-    text-decoration: none;
     font-size: 20px;
 }
 
@@ -20,21 +18,9 @@ button.btn-custom::before {
     z-index: -1;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-        45deg,
-        #04D004,
-        #1ABE1A,
-        #04D004,
-        #14AA14,
-        #04D004,
-        #0E960E,
-        #04D004,
-        #087C08
-    );
-    background-size: 800%;
+    background: #04D004;
     border-radius: 10px;
     filter: blur(8px);
-    animation: glowing 20s linear infinite;
     transition: transform 0.2s ease;
 }
 
@@ -42,40 +28,26 @@ button.btn-custom:hover::before {
     transform: scale(1.05);
 }
 
+@media (min-width: 1280px) and (max-width: 1728px) {
+    button.btn-custom {
+        margin-left: 48px;
+    }
+}
 
 @media (min-width: 768px) and (max-width: 884px) {
-    .btn-custom {
-        margin-left: 30px;
+    button.btn-custom {
+        margin-left: 20px;
     }
     button.btn-custom:hover::before {
         transform: scale(1);
     }
 }
 
-@media (max-width: 768px) {
-    .btn-custom {
-        padding: 14px 30px;
+@media (max-width: 430px) {
+    button.btn-custom {
+        margin-left: 0;
     }
     button.btn-custom:hover::before {
         transform: scale(1);
-    }
-}
-
-@media (min-width: 1280px) and (max-width: 1366px) {
-    .btn-custom {
-        margin-left: 34px;
-    }
-}
-
-@keyframes glowing {
-    0% {
-        background-position: 0 0;
-    }
-    50% {
-        background-position: 400% 0;
-    }
-
-    100% {
-        background-position: 0 0;
     }
 }
