@@ -264,6 +264,14 @@ const TagList: React.FC = React.memo(() => {
                             <div className="tag">
                                 <span></span>
                                 <img 
+                                    src={ts} 
+                                    sizes="(max-width: 600px) 480px, 800px" 
+                                    alt="TypeScript" 
+                                />
+                            </div>
+                            <div className="tag">
+                                <span></span>
+                                <img 
                                     src={bs} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="Bootstrap" 
@@ -358,6 +366,14 @@ const TagList: React.FC = React.memo(() => {
                                     src={js} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="JavaScript" 
+                                />
+                            </div>
+                            <div className="tag">
+                                <span></span>
+                                <img 
+                                    src={ts} 
+                                    sizes="(max-width: 600px) 480px, 800px" 
+                                    alt="TypeScript" 
                                 />
                             </div>
                             <div className="tag">
