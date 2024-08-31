@@ -1,5 +1,5 @@
 import React from "react";
-import { node, html, fig, js, css, bs, react, redux, ex, seq, postg, postm } from "../../../assets/index";
+import { node, html, fig, js, ts, css, bs, react, redux, ex, seq, postg, postm } from "../../../assets/index";
 
 const TagList: React.FC = React.memo(() => {
     return (
@@ -34,6 +34,14 @@ const TagList: React.FC = React.memo(() => {
                                     src={js} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="JavaScript" 
+                                />
+                            </div>
+                            <div className="tag">
+                                <span></span>
+                                <img 
+                                    src={ts} 
+                                    sizes="(max-width: 600px) 480px, 800px" 
+                                    alt="TypeScript" 
                                 />
                             </div>
                             <div className="tag">
@@ -133,6 +141,14 @@ const TagList: React.FC = React.memo(() => {
                                     src={js} 
                                     sizes="(max-width: 600px) 480px, 800px" 
                                     alt="JavaScript" 
+                                />
+                            </div>
+                            <div className="tag">
+                                <span></span>
+                                <img 
+                                    src={ts} 
+                                    sizes="(max-width: 600px) 480px, 800px" 
+                                    alt="TypeScript" 
                                 />
                             </div>
                             <div className="tag">
