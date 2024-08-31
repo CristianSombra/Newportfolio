@@ -2,16 +2,13 @@ button.btn-custom-1 {
     background-color: black;
     border: 1px solid #04D004; 
     border-radius: 18px;
-    padding: 20px 28px; 
+    padding: 20px 28px;
     color: #04D004; 
     font-size: 20px;
     position: relative;
     display: inline-block;
     cursor: pointer;
-    outline: none;
     vertical-align: middle;
-    text-decoration: none;
-    font-family: inherit;
     transition: color 0.4s ease, border 0.4s ease, background-color 0.4s ease;
 }
 
@@ -23,21 +20,9 @@ button.btn-custom-1::before {
     z-index: -1;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-        45deg,
-        #04D004,
-        #1ABE1A,
-        #04D004,
-        #14AA14,
-        #04D004,
-        #0E960E,
-        #04D004,
-        #087C08
-    );
-    background-size: 800%;
+    background: #04D004;
     border-radius: 10px;
     filter: blur(8px);
-    animation: glowing 20s linear infinite;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -57,19 +42,5 @@ button.btn-custom-1:hover::before {
     .btn-custom-1 {
         font-size: 20px;
         padding: 14px 20px;
-    }
-}
-
-
-@keyframes glowing {
-    0% {
-        background-position: 0 0;
-    }
-    50% {
-        background-position: 400% 0;
-    }
-
-    100% {
-        background-position: 0 0;
     }
 }

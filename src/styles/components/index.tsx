@@ -7,5 +7,6 @@ import './buttons/buttonSeeMore/ButtonSeeMore.css'
 import './technologiesCarousel/technologiesCarousel.css';
 import './timeLine/TimeLine.css';
 import './scrollTop/ScrollTop.css';
+import './scrollTop/ScrollTopFooter.css';
 import './myPhoto/MyPhoto.css';
 import './swiperProjects/index';

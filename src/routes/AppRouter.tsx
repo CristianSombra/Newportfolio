@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import { useInView } from 'react-intersection-observer';
 import { Navbar, Footer } from '../layouts';
 import { ToastContainer } from "react-toastify";
-import { ScrollTop, SpinnerLoading } from '../components';
+import { SpinnerLoading, ScrollTop } from '../components';
 import {
     Home,
     About,

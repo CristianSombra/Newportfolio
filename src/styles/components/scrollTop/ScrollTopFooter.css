@@ -1,0 +1,24 @@
+.btn-custom-footer {
+    font-size: 24px;
+    background-color: black;
+    border: 1px solid #04D004; 
+    border-radius: 50px;
+    padding: 10px;
+    max-width: 100%;
+    width: 100%;
+    color: #04D004;
+}
+
+.btn-custom-footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: #04D004;
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+}
