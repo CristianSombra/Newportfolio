@@ -2,6 +2,7 @@ export const node = "https://res.cloudinary.com/nursingstaff/image/upload/v17181
 export const html = "https://res.cloudinary.com/nursingstaff/image/upload/v1718114930/Portfolio/soft%20skills/html5_nhdan7.svg";
 export const fig = "https://res.cloudinary.com/nursingstaff/image/upload/v1718114930/Portfolio/soft%20skills/figma_wbuwva.svg";
 export const js = "https://res.cloudinary.com/nursingstaff/image/upload/v1718114929/Portfolio/soft%20skills/js_dhfsyl.svg";
+export const ts = "https://res.cloudinary.com/nursingstaff/image/upload/v1725072055/Portfolio/soft%20skills/TS_muus6h.png";
 export const css = "https://res.cloudinary.com/nursingstaff/image/upload/v1718114932/Portfolio/soft%20skills/css_ega4yd.svg";
 export const bs = "https://res.cloudinary.com/nursingstaff/image/upload/v1718114933/Portfolio/soft%20skills/bs_a824sk.svg";
 export const react = "https://res.cloudinary.com/nursingstaff/image/upload/v1718114926/Portfolio/soft%20skills/react_fafq9u.svg";
