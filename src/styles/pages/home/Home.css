@@ -5,7 +5,7 @@
 }
 
 .container-home h2 {
-    font-size: 84px !important;
+    font-size: 80px !important;
     font-weight: bold !important;
     margin-top: -20px;
     margin-bottom: -18px;
@@ -25,25 +25,25 @@
 
 @media (min-width: 801px) and (max-width: 884px) {
     .container-home h2 {
-        font-size: 66px !important;
+        font-size: 50px !important;
     }
 }
 
 @media (min-width: 768px) and (max-width: 800px) {
     .container-home h2 {
-        font-size: 62px !important;
+        font-size: 44px !important;
     }
 }
 
 @media (min-width: 321px) and (max-width: 428px) {
     .container-home h2 {
-        font-size: 62px !important;
+        font-size: 54px !important;
     }
 }
 
 @media (max-width: 320px) {
     .container-home h2 {
-        font-size: 58px !important;
+        font-size: 54px !important;
     }
 
     .container-home h3 {
