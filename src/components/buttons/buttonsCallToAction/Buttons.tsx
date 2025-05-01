@@ -11,15 +11,8 @@ const ButtonsDesktop: React.FC = React.memo(() => {
     // }
 
     return(
-        <div className="row d-flex justify-content-start mt-0 mt-md-4">
-            {/* <div className="col-12 col-md-6 col-lg-6 col-xl-4 d-none d-md-block">
-                <div className="py-3">
-                    <button className="btn-custom-1" onClick={handleDownloadPdf}>
-                        Currículum
-                    </button>
-                </div>
-            </div> */}
-            <div className="col-12 col-md-6 col-lg-6 col-xl-4 d-none d-md-block">
+        // <div className=" mt-0 mt-md-4">
+            <div className="mt-md-4 d-none d-md-block">
                 <div className="py-3">
                     <a href="#Contact" role="button">
                         <button className="btn-custom" aria-label="Ir a la sección de contacto" tabIndex={0}>
@@ -28,7 +21,7 @@ const ButtonsDesktop: React.FC = React.memo(() => {
                     </a>
                 </div>
             </div>
-        </div>
+        // </div>
     );
 });
 
