@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import AnimateProps from "../props/animateSection/AnimateSection";
 
 const DisplayText: React.FC<AnimateProps> = ({ animate }) => {
-    const fullText = "Developer";
+    const fullText = "Full Stack";
     const [displayedText, setDisplayedText] = useState("");
 
     useEffect(() => {

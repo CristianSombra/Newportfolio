@@ -25,16 +25,16 @@ const Home: React.FC<AnimateProps>= ({ animate }) => {
                         id="home-heading"
                         initial={{opacity: 0}}
                         animate={animate ? {opacity: 1} : {}}
-                        transition={{duration: 0.6, delay: 0.2, ease: "easeInOut"}}
+                        transition={{duration: 0.6, delay: 0.3, ease: "easeInOut"}}
                         >
                             Cristian Sombra
                     </motion.h1>
                     <motion.h2
-                        initial={{x:60, opacity: 0, filter: 'blur(10px)'}}
+                        initial={{x:30, opacity: 0, filter: 'blur(10px)'}}
                         animate={animate ? {x: 0, opacity: 1, filter: 'blur(0px)'} : {}}
-                        transition={{duration: 0.8, delay: 0.6, ease: "easeInOut"}}
+                        transition={{duration: 0.6, delay: 0.6, ease: "easeInOut"}}
                         >
-                        Full Stack
+                        Desarrollador
                     </motion.h2>
                     <h3>
                         <DisplayText animate={animate} />
@@ -51,7 +51,7 @@ const Home: React.FC<AnimateProps>= ({ animate }) => {
                 </div>
 
                 {/* Image */}
-                <div className="col-12 col-md-6 col-lg-4 text-end text-lg-center">
+                <div className="col-10 col-md-6 col-lg-3 text-end text-lg-center">
                     <MyPhoto />
                 </div>
 
