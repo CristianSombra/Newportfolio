@@ -1,5 +1,5 @@
 import React from "react";
-import { TA, FS, B5, UI, CS } from "../../assets";
+import { TA, FS, B5, UI, PY, CS } from "../../assets";
 import "@/styles";
 
 const TimeLine: React.FC = React.memo(() => {
@@ -37,12 +37,20 @@ const TimeLine: React.FC = React.memo(() => {
             arrowClass: "right-container-arrow"
         },
         {
-            img: CS,
-            title: "Cursando actualmente",
-            date: "2024",
-            description: "Diseñador UX | Python Básico a Avanzado | MongoDB Básico a Avanzado | PostgreSQL Nivel Avanzado | Estudiante de la carrera de Ciencia de datos e IA.",
+            img: PY,
+            title: "Universidad Python",
+            date: "Diciembre 2024",
+            description: "De cero a experto, más de 86 horas cátedra. Conexión con base de datos. POO, PySide, Jinja, Tkinker, Flask.",
             containerClass: "left-container",
             arrowClass: "left-container-arrow"
+        },
+        {
+            img: CS,
+            title: "Cursando actualmente",
+            date: "2025",
+            description: "Diseñador UX | MongoDB Básico a Avanzado | PostgreSQL Nivel Avanzado | Estudiante de la carrera de Ciencia de datos e IA.",
+            containerClass: "right-container",
+            arrowClass: "right-container-arrow"
         }
         
     ];

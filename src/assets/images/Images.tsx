@@ -9,6 +9,7 @@ export const TA = "https://res.cloudinary.com/nursingstaff/image/upload/v1720251
 export const FS = "https://res.cloudinary.com/nursingstaff/image/upload/v1720251294/Portfolio/NewSection/Trajectory/Timeline/henry_knqxus.webp";
 export const B5 = "https://res.cloudinary.com/nursingstaff/image/upload/v1720251296/Portfolio/NewSection/Trajectory/Timeline/b5_dbuhal.webp";
 export const UI = "https://res.cloudinary.com/nursingstaff/image/upload/v1720251295/Portfolio/NewSection/Trajectory/Timeline/ui_tupgfh.webp";
+export const PY = "https://res.cloudinary.com/nursingstaff/image/upload/v1746131902/Portfolio/NewSection/Trajectory/Timeline/py_kfh56y.webp";
 export const CS = "https://res.cloudinary.com/nursingstaff/image/upload/v1720251297/Portfolio/NewSection/Trajectory/Timeline/comingsoon_ij0ol2.webp";
 
 {/* Calendly contact */}
