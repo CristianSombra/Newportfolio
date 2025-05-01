@@ -41,6 +41,7 @@ const Home: React.FC<AnimateProps>= ({ animate }) => {
                     </h3>
 
                     {/* Botones desktop */}
+                    
                     <ButtonsDesktop />
 
                     <div className="row d-flex justify-content-center mt-lg-4">
@@ -51,7 +52,7 @@ const Home: React.FC<AnimateProps>= ({ animate }) => {
                 </div>
 
                 {/* Image */}
-                <div className="col-10 col-md-6 col-lg-3 text-end text-lg-center">
+                <div className="col-12 col-md-6 col-lg-4 text-end ms-lg-5">
                     <MyPhoto />
                 </div>
 

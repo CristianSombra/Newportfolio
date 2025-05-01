@@ -29,15 +29,11 @@ button.btn-custom:hover::before {
 }
 
 @media (min-width: 1280px) and (max-width: 1728px) {
-    button.btn-custom {
-        margin-left: 48px;
-    }
+
 }
 
 @media (min-width: 768px) and (max-width: 884px) {
-    button.btn-custom {
-        margin-left: 20px;
-    }
+
     button.btn-custom:hover::before {
         transform: scale(1);
     }
