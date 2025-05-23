@@ -9,7 +9,7 @@ export const MyPhoto: React.FC = React.memo(() => {
             aria-label="Foto de perfil de mi portafolio"
             >
             <img
-                src={"https://res.cloudinary.com/nursingstaff/image/upload/v1746141108/Portfolio/NewSection/Home/Yo_udyrxa.webp"} 
+                src={"https://res.cloudinary.com/cristiansombra/image/upload/v1746141108/Portfolio/NewSection/Home/Yo_udyrxa.webp"} 
                 className="img-fluid img-custom"
                 alt="Foto de perfil de mi portafolio"
                 loading="lazy"
