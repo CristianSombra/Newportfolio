@@ -44,7 +44,7 @@ const Home: React.FC<AnimateProps>= ({ animate }) => {
                     
                     <ButtonsDesktop />
 
-                    <div className="row d-flex justify-content-center mt-lg-4">
+                    <div className="row d-flex justify-content-center mt-lg-5">
                         <div className="col-12 d-none d-lg-block mt-lg-4">
                             <p>Apasionado del <strong style={{color: '#04D004'}}>código</strong> y amante de los desafíos.</p>
                         </div>
@@ -67,7 +67,7 @@ const Home: React.FC<AnimateProps>= ({ animate }) => {
                 </div>
             </div>
 
-            <div className="row d-flex justify-content-center text-center mt-2">
+            <div className="row d-flex justify-content-center text-center mt-0">
                 <div className="col-12 d-none d-lg-block">
                     <ButtonSeeMore/>
                 </div>

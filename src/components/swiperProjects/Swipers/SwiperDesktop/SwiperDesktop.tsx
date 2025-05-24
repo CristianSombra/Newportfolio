@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import type { Swiper as SwiperType } from 'swiper';
 import SwiperCore from 'swiper/core'
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 import { portfolio, dashboard } from '../../../../assets';
@@ -19,7 +20,7 @@ const SwiperDesktop: React.FC = React.memo(() => {
 
     const [activeIndex, setActiveIndex] = useState<number>(0);
 
-    const handleSlideChange = (swiper: any) => {
+    const handleSlideChange = (swiper: SwiperType) => {
         setActiveIndex(swiper.realIndex);
     };
 
